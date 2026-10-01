@@ -32,7 +32,7 @@
 
 | ラジオ | 追加インストール |
 |---|---|
-| RTL-SDR, HackRF, Airspy | 通常不要（USB は Zadig が一度必要な場合あり） |
+| RTL-SDR, HackRF, Airspy | 通常不要（USB は**最新 Zadig** が一度必要な場合あり。旧版は失敗しやすい） |
 | SDRplay RSP | 必要 — 公式 **SDRplay API 3.x** |
 | Lime / Pluto / BladeRF / USRP | 任意 — **PothosSDR** (SoapySDR) |
 | WebSDR / Kiwi / OpenWebRX | ハード不要、インターネットのみ |

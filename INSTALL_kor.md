@@ -20,7 +20,10 @@ RTL-SDR·HackRF·Airspy를 위해 **별도 DLL을 더 받을 필요는 보통 �
 ### RTL-SDR / HackRF / Airspy (USB)
 
 1. 동글을 꽂습니다.
-2. Windows가 SDR로 인식하지 않으면 **[Zadig](https://zadig.akeo.ie/)** 로 WinUSB를 한 번 설치합니다.
+2. Windows가 SDR로 인식하지 않으면 **Zadig**으로 WinUSB를 한 번 설치합니다.
+   - **최신 Zadig**만 사용하세요: **[https://zadig.akeo.ie/](https://zadig.akeo.ie/)** (또는 [libwdi releases](https://github.com/pbatard/libwdi/releases)의 최신 파일). 작성 시점 기준 **Zadig 2.9**.
+   - **이전 버전 Zadig은 쓰지 마세요.** 요즘 Windows에서는 구버전이 WinUSB를 제대로 못 잡아 RTL-SDR이 SOURCE에 안 뜨는 경우가 많습니다.
+   - Zadig에서 **Options → List All Devices**를 켠 뒤 SDR bulk 인터페이스(많은 RTL-SDR: `Bulk-In, Interface (Interface 0)` / Realtek)를 고르고 **WinUSB** → **Install/Replace Driver**.
 3. NeuroSDR에서 해당 **SOURCE**를 고릅니다.
 
 ### SDRplay
@@ -53,7 +56,7 @@ RTL-SDR·HackRF·Airspy를 위해 **별도 DLL을 더 받을 필요는 보통 �
 
 | 증상 | 확인 |
 |---|---|
-| SOURCE에 동글 없음 | Zadig / 케이블 / 포트; SDRplay는 API 설치 |
+| SOURCE에 동글 없음 | **최신 Zadig**(구버전 금지) / 케이블 / 포트; SDRplay는 API 설치 |
 | RX START 실패 | 다른 SDR 앱이 장치를 잡고 있는지, 상태줄 메시지 |
 | 소리 없음 | SETUP 오디오 장치, OUT1, Windows 볼륨 |
 | 원격만 이상 | URL·다른 사이트·방화벽 |

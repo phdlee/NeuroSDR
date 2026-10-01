@@ -20,7 +20,10 @@
 ### RTL-SDR / HackRF / Airspy（USB）
 
 1. 插入加密狗。
-2. 若 Windows 未识别为可用 SDR，用 **[Zadig](https://zadig.akeo.ie/)** 安装一次 WinUSB。
+2. 若 Windows 未识别为可用 SDR，用 **Zadig** 安装一次 WinUSB。
+   - 请使用**最新版 Zadig**：**[https://zadig.akeo.ie/](https://zadig.akeo.ie/)**（或 [libwdi releases](https://github.com/pbatard/libwdi/releases) 最新资源）。撰写时为 **Zadig 2.9**。
+   - **不要使用旧版 Zadig。** 在较新的 Windows 上，旧版常常无法正确绑定 WinUSB，导致 RTL-SDR 不会出现在 SOURCE 中。
+   - 在 Zadig 中勾选 **Options → List All Devices**，选择 SDR 的 bulk 接口（多数 RTL-SDR：`Bulk-In, Interface (Interface 0)` / Realtek），选 **WinUSB**，再 **Install/Replace Driver**。
 3. 在 NeuroSDR 中选择对应 **SOURCE**。
 
 ### SDRplay
@@ -53,7 +56,7 @@
 
 | 现象 | 检查 |
 |---|---|
-| SOURCE 中无加密狗 | Zadig / 线缆 / 端口；SDRplay 需安装 API |
+| SOURCE 中无加密狗 | **最新 Zadig**（勿用旧版）/ 线缆 / 端口；SDRplay 需安装 API |
 | RX START 失败 | 其他 SDR 软件是否占用设备；状态栏提示 |
 | 无声音 | SETUP 音频设备、OUT1、Windows 音量 |
 | 仅远程异常 | URL、换站点、防火墙 |

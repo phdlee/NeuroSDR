@@ -32,7 +32,7 @@ You do not need Visual Studio, the .NET SDK, or this source tree to use NeuroSDR
 
 | Radio | Extra install? |
 |---|---|
-| RTL-SDR, HackRF, Airspy | Usually no (USB drivers / Zadig may be required once) |
+| RTL-SDR, HackRF, Airspy | Usually no app DLLs; USB needs **latest Zadig** once if WinUSB is missing (old Zadig often fails) |
 | SDRplay RSP | Yes — install the official **SDRplay API 3.x** |
 | Lime / Pluto / BladeRF / USRP | Optional — install **PothosSDR** (SoapySDR) |
 | WebSDR / Kiwi / OpenWebRX | No hardware; Internet only |

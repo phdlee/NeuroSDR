@@ -24,8 +24,10 @@ You usually **do not** need to download extra DLLs for RTL-SDR, HackRF, or Airsp
 ### Windows USB (RTL-SDR / HackRF / Airspy)
 
 1. Plug the dongle in.
-2. If Windows does not see it as a usable SDR, install a WinUSB / libusb driver with **[Zadig](https://zadig.akeo.ie/)** (one-time per device).  
-   Pick the SDR interface (not a composite “Storage” or HID-only entry) and install WinUSB.
+2. If Windows does not see it as a usable SDR, install a WinUSB / libusb driver with **Zadig** (one-time per device).
+   - Download the **latest** Zadig from the official site: **[https://zadig.akeo.ie/](https://zadig.akeo.ie/)** (or the newest asset on the [libwdi releases](https://github.com/pbatard/libwdi/releases) page). As of this writing that is **Zadig 2.9**.
+   - **Do not use an old Zadig build.** Older versions often fail to bind WinUSB correctly on current Windows, so the RTL-SDR (and similar) dongle never shows up as a usable SOURCE.
+   - In Zadig, enable **Options → List All Devices**, pick the SDR bulk interface (for many RTL-SDR sticks: `Bulk-In, Interface (Interface 0)` / Realtek), choose **WinUSB**, then **Install Driver** or **Replace Driver**. Avoid Storage/HID-only entries.
 3. Start NeuroSDR and choose the matching **SOURCE**.
 
 ### SDRplay (RSP1 / RSP1A / RSPdx / …)
@@ -72,7 +74,7 @@ In SETUP → General, enable **WEB REMOTE** if you want the phone / browser UI. 
 
 | Symptom | What to try |
 |---|---|
-| No SOURCE for your dongle | Zadig / USB cable / another USB port; for SDRplay, confirm the API is installed |
+| No SOURCE for your dongle | Use **latest Zadig** (not an old copy), USB cable / another port; for SDRplay, confirm the API is installed |
 | RX START fails | Close other SDR apps that hold the same device; check the status bar message |
 | No sound | SETUP → Audio: pick a real waveOut device; unmute OUT1; check Windows volume |
 | Remote WebSDR audio wrong | Confirm the site URL; try another site; check Internet / firewall |

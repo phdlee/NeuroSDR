@@ -1,0 +1,34 @@
+NeuroSDR RTL-SDR native binaries
+================================
+
+Source: Osmocom official Windows binary index
+https://downloads.osmocom.org/binaries/windows/rtl-sdr/
+
+Version date: 2026-08-02
+
+x64 archive:
+rtl-sdr-64bit-20260802.zip
+SHA-256 80090F42B6117F3B8618115FD9B8F9CD67B75C22CA1F1DBF4C80D5EC8FF0D207
+
+x86 archive:
+rtl-sdr-32bit-20260802.zip
+SHA-256 94D5F8C8130DF16705B2C518B469C3D2CBD254EC16D1D32D19A2D60680624EC3
+
+Packaged runtime files:
+
+native/win-x64:
+- librtlsdr.dll
+- libusb-1.0.dll
+- libwinpthread-1.dll
+
+native/win-x86:
+- librtlsdr.dll
+- libusb-1.0.dll
+- libwinpthread-1.dll
+- libgcc_s_sjlj-1.dll
+
+The build copies only the files matching the NeuroSDR process architecture.
+rtl-sdr is distributed under GPL-2.0-or-later; libusb is LGPL-2.1-or-later.
+See the upstream projects for their complete corresponding source and licenses:
+https://gitea.osmocom.org/sdr/rtl-sdr
+https://github.com/libusb/libusb

@@ -1,0 +1,18 @@
+HackRF Windows native binaries
+================================
+
+Files:
+- win-x64/hackrf.dll
+- win-x86/hackrf.dll
+
+Built locally with Microsoft Visual C++ from the official Great Scott Gadgets
+HackRF v2026.01.3 source release:
+https://github.com/greatscottgadgets/hackrf/tree/v2026.01.3
+
+The DLLs link statically to pthreads4w and dynamically to libusb-1.0.dll.
+The accompanying x64/x86 libusb DLLs are from the official libusb v1.0.30
+Windows binary release:
+https://github.com/libusb/libusb/releases/tag/v1.0.30
+
+See HACKRF-COPYING.txt, PTHREADS4W-LICENSE.txt and LIBUSB-COPYING.txt.
+No HackRF firmware image is bundled or written by NeuroSDR.

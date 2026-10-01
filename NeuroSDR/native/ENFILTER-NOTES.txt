@@ -1,0 +1,25 @@
+ENFilter (voice RNNoise path + dedicated CW path)
+=================================================
+
+Copied into this tree from a local ENFilter core (not a git submodule / ProjectReference):
+
+  source: J:\cursor\ENFilter\core
+  dest:   NeuroSDR/native/enfilter
+
+Do not link the original ENFilter.sln. Rebuild ENFilter.dll from the copied sources
+(native/enfilter/CMakeLists.txt) and place the DLL next to other natives:
+
+  NeuroSDR/native/win-x64/ENFilter.dll
+
+Third-party / open source used inside the copied core
+-----------------------------------------------------
+
+RNNoise 0.1.1 (and bundled kiss FFT / CELT LPC pieces)
+  License: BSD-3-Clause
+  Copyright: Mozilla, Jean-Marc Valin, Xiph.Org Foundation, Mark Borgerding
+  Upstream: https://gitlab.xiph.org/xiph/rnnoise
+            https://github.com/xiph/rnnoise
+  Full text: native/RNNOISE-COPYING.txt  (copied with the program)
+
+When publishing NeuroSDR to GitHub, include RNNOISE-COPYING.txt in the
+repository and mention RNNoise in the README / NOTICE.

@@ -1,0 +1,12 @@
+Airspy (R2 / Mini) Windows native binaries
+==========================================
+
+Files:
+- win-x64/airspy.dll + pthreadVC2.dll
+- win-x86/airspy.dll + pthreadVCE2.dll
+
+Taken from the official Airspy host tools v1.0.10 release:
+https://github.com/airspy/airspyone_host/releases/tag/v1.0.10
+
+libusb-1.0.dll is already shipped for RTL-SDR / HackRF and is reused.
+See LIBUSB-COPYING.txt and AIRSPY-COPYING.txt.

@@ -1,0 +1,2739 @@
+[
+  {
+    "Url": "http://sdr.rogerh.co.nz:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:00:03.4245432+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://kiwisdr.areg.org.au:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:00:07.3352641+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://kiwisdr.areg.org.au:8074/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:00:10.9830414+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://zl7dx.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:00:15.6752882+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://sdr.ironstonerange.com:8075/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:00:19.2459289+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://jp7fso-kiwisdr.sytes.net:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:00:20.6315457+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://sdr.ironstonerange.com:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:00:24.1006608+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://n0bqv.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:00:27.641656+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://zl2p-3.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:00:31.470824+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://ja0veu.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:00:35.3899479+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://ciw321.cfars.ca:8174/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:00:38.2119595+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://porky.dahlbros.net:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:00:43.5965156+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://sdr.ironstonerange.com:8076/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:00:47.3578484+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://sdr.ironstonerange.com:8074/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:00:50.5146475+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://porky.dahlbros.net:8074/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:00:54.2475041+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://kiwi.web-sdr.net/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027403\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:00:55.4752536+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://22545.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:00:59.114892+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://ve3hls.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:01:02.8654341+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://mtkiwi.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:01:06.1129947+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://ja5fp2.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The operation has timed out.",
+    "CheckedUtc": "2026-09-26T11:01:20.3638068+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://vk2ggc.ddns.net:8074/",
+    "Reachable": false,
+    "Detail": "Kiwi auth failed / channel busy",
+    "CheckedUtc": "2026-09-26T11:01:22.4528734+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://kphsdr.com:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:01:24.7969036+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://sdrsapporo.ddns.net:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:01:26.7011165+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://zl2aiu.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:01:31.2270299+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://kiwisdr.tko.zlwan.net:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:01:34.6157394+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://kr6la.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:01:37.765056+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://207.102.144.154:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:01:41.2970692+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://kb6c.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:01:44.8871467+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://72.172.110.98:8175/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:01:47.7510531+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://22537.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:01:51.5694947+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://86.209.14.222:8073/",
+    "Reachable": false,
+    "Detail": "The operation has timed out.",
+    "CheckedUtc": "2026-09-26T11:02:05.525339+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://21023.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:02:09.0192587+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://22568.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:02:12.745678+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://22920.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:02:16.0588139+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://zl2ks.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:02:19.9211843+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://g8ure.ddns.net:8074/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:02:23.448128+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://ciw321.cfars.ca:8173/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:02:25.9016118+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://22137.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:02:29.44919+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://hl5ntr.ddns.net:8074/",
+    "Reachable": false,
+    "Detail": "Timed out",
+    "CheckedUtc": "2026-09-26T11:02:49.9248385+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://tredxk.no-ip.org:8075/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:02:53.9542576+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://zl2j.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:02:59.7492918+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://21344.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:03:03.3017201+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://vr2bg.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:03:07.2179425+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://22332.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:03:11.5155584+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://22848.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:03:15.3377176+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://irelandnorthwest3.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:03:19.0964328+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://wessex.zapto.org:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:03:22.9258062+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://f4joy.ddns.net:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:03:26.6913557+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://irelandnorthwest2.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:03:30.5759694+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://21042.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:03:34.3554336+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "https://kiwi.770net.de:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:03:40.6594651+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://irelandnorthwest.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:03:44.7100148+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://wessex.zapto.org:8074/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:03:48.2345045+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://g3sdr.com:8076/",
+    "Reachable": false,
+    "Detail": "Timed out",
+    "CheckedUtc": "2026-09-26T11:04:08.6152503+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://g8ure.ddns.net:8079/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:04:11.8579559+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://sa4bna.hopto.org:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:04:17.2196644+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://22207.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:04:21.7475242+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://g3sdr.com:8074/",
+    "Reachable": false,
+    "Detail": "Timed out",
+    "CheckedUtc": "2026-09-26T11:04:42.2895489+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://kiwisdr.kfsdr.com:8076/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:04:44.3801382+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://kphsdr.com:8072/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:04:46.7422233+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://kiwisdr2.sdrutah.org:8074/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:04:49.5625094+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://22378.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:04:53.7639998+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://kiwisdr.sk2hg.se:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:04:57.4313217+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://22033.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:05:00.7387517+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://22337.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:05:05.0709719+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://sk6ag2.ddns.net:8072/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:05:08.0394688+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://k9dxikiwi.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:05:10.9331349+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://178.17.3.34:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:05:14.5285532+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://db3th.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:05:18.5284718+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://g8ure.ddns.net:8078/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:05:21.9280726+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://22370.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:05:25.6530585+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://nr601sdrnet.ddns.net:4400/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:05:27.0611835+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://g3sdr.com:8077/",
+    "Reachable": false,
+    "Detail": "Timed out",
+    "CheckedUtc": "2026-09-26T11:05:48.4369151+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://skip.land:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:05:51.0543939+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://44.31.191.63:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:05:54.5961034+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://22424.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:05:58.4338288+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://vk6qs2.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:06:02.3047704+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://g3sdr.com:8075/",
+    "Reachable": false,
+    "Detail": "Timed out",
+    "CheckedUtc": "2026-09-26T11:06:22.7408334+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://86.168.201.233:8073/",
+    "Reachable": false,
+    "Detail": "Timed out",
+    "CheckedUtc": "2026-09-26T11:06:43.0478611+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://g8ure.ddns.net:8077/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:06:46.041005+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://g8ure.ddns.net:8071/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:06:50.5158901+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://g3sdr.com:8073/",
+    "Reachable": false,
+    "Detail": "Timed out",
+    "CheckedUtc": "2026-09-26T11:07:10.9383823+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://jp1odj.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:07:14.0471691+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://jplin53a.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:07:17.4510689+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://aviolanda2.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:07:22.1464695+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://pb8w.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:07:25.7580897+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://swl-lippi-1.stbach.de/",
+    "Reachable": false,
+    "Detail": "Timed out",
+    "CheckedUtc": "2026-09-26T11:07:46.3307574+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://oh6hps.ddns.net:8073/",
+    "Reachable": false,
+    "Detail": "Kiwi auth failed / channel busy",
+    "CheckedUtc": "2026-09-26T11:07:48.3932281+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://oh3aa.dy.fi:18073/",
+    "Reachable": false,
+    "Detail": "Kiwi auth failed / channel busy",
+    "CheckedUtc": "2026-09-26T11:07:51.2710515+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://f4kiy.ddns.net:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:07:54.8909732+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://vk3jst.ddns.net:8074/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:07:59.1453108+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://www.f5lfe.fr:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:08:02.9977089+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://jplin53c.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The operation has timed out.",
+    "CheckedUtc": "2026-09-26T11:08:17.4093899+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://kiwisdr1.sdrutah.org:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:08:20.2583031+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://22859.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:08:23.6656866+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://166.70.44.45:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:08:26.5042669+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://sdr.autreradioautreculture.com:8073/",
+    "Reachable": false,
+    "Detail": "Kiwi auth failed / channel busy",
+    "CheckedUtc": "2026-09-26T11:08:28.8507327+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://sybil.yak.net:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:08:31.3172335+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://ko9xjv5u227qbxwa.myfritz.net:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:08:35.2992391+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://21785.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:08:39.5578097+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://87.104.90.69:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:08:43.1099936+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://ag4nd.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:08:47.0711421+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://22973.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:08:50.4239288+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://vk2ggc.ddns.net:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:08:53.8023451+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://jm55.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:08:57.6637583+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://108.180.193.61:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:00.2199254+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://22416.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:09:04.4224776+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://85.183.11.108:8074/",
+    "Reachable": false,
+    "Detail": "Kiwi auth failed / channel busy",
+    "CheckedUtc": "2026-09-26T11:09:06.6617806+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://bern.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:10.1510579+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://rajawali.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:13.8428595+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://oh1ct.sytes.net:8073/",
+    "Reachable": false,
+    "Detail": "No audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://sdr.autreradioautreculture.com:8074/",
+    "Reachable": false,
+    "Detail": "Kiwi auth failed / channel busy",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://71.51.165.29:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://83.247.88.41:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://kiwisdr.hirokinet.com:8074/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://mediaexplorer.ddns.net:8073/",
+    "Reachable": false,
+    "Detail": "Timed out",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://ahorn.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://jk1lot.ham-radio-op.net:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://sdr.k1vl.com:8077/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://g8ure.ddns.net:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://22789.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://21748.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://wartli.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://vr2kj.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://k9czi-2.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://g3sdr.com:8078/",
+    "Reachable": false,
+    "Detail": "Timed out",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://21554.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://nd8d1.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://websdr.mwrs.org.au:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://zl2bkw.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://shonankiwisdr.ddns.net:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://vk3cmz.ddns.net:8074/",
+    "Reachable": false,
+    "Detail": "Timed out",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://sdr.k1vl.com:8076/",
+    "Reachable": false,
+    "Detail": "The operation has timed out.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://89.0.92.209:8073/",
+    "Reachable": false,
+    "Detail": "Timed out",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://rffryslan.vosrx.nl:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://kiwisdr.p3w-451.net/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027403\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://zl3rck.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://22473.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://sm2byc.ddns.net:8073/",
+    "Reachable": false,
+    "Detail": "Timed out",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://kiwijo53cn.ddnss.org:8073/",
+    "Reachable": false,
+    "Detail": "Kiwi auth failed / channel busy",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://vk3fsk.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://123.255.47.67:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://rwp.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://178.237.95.113:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://kiwi.k8bmz.net:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://w0air.ddns.net:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://iz6198swl.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://kiwisdr.dfm.hu/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027403\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://21115.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://linkz.ddns.net:8075/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://vk6seg.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://ik2wbg-proxy.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://76.53.60.62:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://ktm.twrmon.net:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://oh5ae.dyndns.org:8073/",
+    "Reachable": false,
+    "Detail": "Kiwi auth failed / channel busy",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://g8ure.ddns.net:8072/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://190.123.83.42:8073/",
+    "Reachable": false,
+    "Detail": "Kiwi auth failed / channel busy",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://4xe4gzz9q3vzm153.myfritz.net:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://21959.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://linkz.ddns.net:8074/",
+    "Reachable": false,
+    "Detail": "The operation has timed out.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://85.183.11.108:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://kf4zey.myddns.me:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://22052.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://barossa.servebeer.com:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://21684.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://hik.iptime.org:8074/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://okno.ddns.net:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://i1fqh.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://21214.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://fenuradio-kiwi2.ddns.net:8074/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://ve3hoa.ddns.net:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://k7abj.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://21083.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://dijonse.fr:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://178.63.122.223:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://df0twn.dnsuser.de:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://sdr.k1vl.com:8075/",
+    "Reachable": false,
+    "Detail": "The operation has timed out.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://21263.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://kiwisdr.k3fef.com:8073/",
+    "Reachable": false,
+    "Detail": "The operation has timed out.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://oh1rj.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://121.81.39.234:8073/",
+    "Reachable": false,
+    "Detail": "Kiwi auth failed / channel busy",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://81.172.193.108:8073/",
+    "Reachable": false,
+    "Detail": "Kiwi auth failed / channel busy",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://jjm0311.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://la3rk.dyndns.org:8073/",
+    "Reachable": false,
+    "Detail": "Timed out",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://dh2ws.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://24.78.154.153:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://w7pua-2.ddns.net:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://kx4az-t2.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://178.38.13.74:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://kareliamwdx.ddns.net:8074/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://g3sdh.com:8053/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://dl0dtm.ddns.net:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://88.81.100.130:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://21383.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://22355.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://do6lsm.ddns.net:8074/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://22784.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://21952.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://bv3un.ddns.net:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://gm4rdx.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://80.121.102.208:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://93.43.217.147:8075/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://skip.land:8074/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://21262.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://21517.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://23195.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://sdr.k1vl.com:8074/",
+    "Reachable": false,
+    "Detail": "The operation has timed out.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://22639.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://22969.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://23144.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://wildmountain.ham-radio-op.net:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://dl4eeckiwi.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://22726.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://22299.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://21818.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://kiwi.minish.org:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://k9czi-1.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://21051.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://21472.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://jplin53z.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The operation has timed out.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://pardinho.websdr.com.br:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://sdxlkiwi7.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://ssi.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The operation has timed out.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://hg5acz.ddns.net:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://sdr-amradioantennas.com:8071/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://22327.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://21625.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://ja7kbr2.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://21420.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://21612.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://hb9cwk.internet-box.ch:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://kx4az-t1.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://ve6ddd.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://s57bit.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "Kiwi auth failed / channel busy",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://21763.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://22702.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://gnss.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://ve6hfd.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://22902.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://23108.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://21996.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://162.199.177.108:8073/",
+    "Reachable": false,
+    "Detail": "The operation has timed out.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://22471.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://plonsk.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://hanshomepa0ehg.ddns.net:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://62.45.193.175:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://dl1bajkiwisdr.ddns.net:8074/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://websdr.sm7iun.se:8073/",
+    "Reachable": false,
+    "Detail": "Timed out",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://lu4aa.proxy.kiwisdr.com/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://hb9rlm.ddns.net:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://pa8ad-1.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://hurricane.ddns.me:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://178.115.248.93:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://21918.proxy.kiwisdr.com/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027404\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://sdr-amradioantennas.com:8074/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://kernow.hopto.org:8073/",
+    "Reachable": true,
+    "Detail": "Audio",
+    "CheckedUtc": "2026-09-26T11:09:18.1416671+00:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://websdr.ewi.utwente.nl:8901/",
+    "Reachable": true,
+    "Detail": "Audio 82",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 82
+  },
+  {
+    "Url": "http://appr.org.br:8901/",
+    "Reachable": false,
+    "Detail": "The server returned status code \u0027200\u0027 when status code \u0027101\u0027 was expected.",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://eshail.batc.org.uk:8901/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://sdr.websdrmaasbree.nl:8901/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://websdr.srr-76.ru/",
+    "Reachable": true,
+    "Detail": "Audio 83",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 83
+  },
+  {
+    "Url": "http://websdr.is0grb.it:8901/",
+    "Reachable": true,
+    "Detail": "Audio 86",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 86
+  },
+  {
+    "Url": "http://websdr.k3fef.com:8901/",
+    "Reachable": true,
+    "Detail": "Audio 100",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 100
+  },
+  {
+    "Url": "http://80m.radiorubka.org:8903/",
+    "Reachable": false,
+    "Detail": "\uD604\uC7AC \uC5F0\uACB0\uC740 \uC6D0\uACA9 \uD638\uC2A4\uD2B8\uC5D0 \uC758\uD574 \uAC15\uC81C\uB85C \uB04A\uACBC\uC2B5\uB2C8\uB2E4.",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://ham.websdrbordeaux.fr:8000/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://websdr1.sdrutah.org:8901/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://sdr.websdrmaasbree.nl:8902/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://3.radiorubka.org/",
+    "Reachable": false,
+    "Detail": "\uD604\uC7AC \uC5F0\uACB0\uC740 \uC6D0\uACA9 \uD638\uC2A4\uD2B8\uC5D0 \uC758\uD574 \uAC15\uC81C\uB85C \uB04A\uACBC\uC2B5\uB2C8\uB2E4.",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://websdr2.sdrutah.org:8902/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://sdr.r9a.ru/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://na5b.com:8901/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://py7nmcaruarupe.ddns.net:81/",
+    "Reachable": true,
+    "Detail": "Audio 86",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 86
+  },
+  {
+    "Url": "http://remoteradio.changeip.org:8073/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://websdr1.kfsdr.com:8901/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://sdr.radioandorra.org/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://85.173.189.23:8901/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://hackgreensdr.org:8901/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://ra0sms-websdr.ru:8902/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://el22.dyndns-blog.com:8081/",
+    "Reachable": true,
+    "Detail": "Audio 85",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 85
+  },
+  {
+    "Url": "http://sdr.homeip.net:8901/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://es4o.ee:8901/",
+    "Reachable": true,
+    "Detail": "Audio 72",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 72
+  },
+  {
+    "Url": "http://sdr.websdrmaasbree.nl:8905/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://sv3gcb.ddns.net:8905/",
+    "Reachable": true,
+    "Detail": "Audio 86",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 86
+  },
+  {
+    "Url": "http://radio-sdr.dyndns.org:8901/",
+    "Reachable": true,
+    "Detail": "Audio 85",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 85
+  },
+  {
+    "Url": "http://lu3dj.ddns.net:8080/",
+    "Reachable": false,
+    "Detail": "\uB300\uC0C1 \uCEF4\uD4E8\uD130\uC5D0\uC11C \uC5F0\uACB0\uC744 \uAC70\uBD80\uD588\uC73C\uBBC0\uB85C \uC5F0\uACB0\uD558\uC9C0 \uBABB\uD588\uC2B5\uB2C8\uB2E4.",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://sdr.22dx.ru:8901/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://websdr.camras.nl:8901/",
+    "Reachable": true,
+    "Detail": "Audio 87",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 87
+  },
+  {
+    "Url": "http://salamisdr22.ddns.net:8906/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://el22.dyndns-blog.com:8080/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://websdr.printf.cc:8901/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://websdr.yo3ggx.ro:8765/",
+    "Reachable": true,
+    "Detail": "Audio 83",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 83
+  },
+  {
+    "Url": "http://roma4.ddns.net/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://websdr.fi:8080/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://phantomsdr.no-ip.org:8900/",
+    "Reachable": false,
+    "Detail": "No audio",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://websdr4.sdrutah.org:8904/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://rem-esp.spdns.org:8901/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://orlandia.sdr.net.br:9001/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://rnd.websdr.pro/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://websdr.78dx.ru:8901/",
+    "Reachable": true,
+    "Detail": "Audio 83",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 83
+  },
+  {
+    "Url": "http://2360.ddns.me:8901/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://club.lu1ma.org.ar:7999/",
+    "Reachable": true,
+    "Detail": "Audio 86",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 86
+  },
+  {
+    "Url": "http://websdr.so8oo.net:8091/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://pu3alk.com.br:9001/",
+    "Reachable": true,
+    "Detail": "Audio 78",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 78
+  },
+  {
+    "Url": "http://wmk.nordhessenfunk.de/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://wessex.hopto.org:8902/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://websdr3.sdrutah.org:8903/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://websdr.heppen.be:8901/",
+    "Reachable": true,
+    "Detail": "Audio 100",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 100
+  },
+  {
+    "Url": "http://il38.ddns.net:8901/",
+    "Reachable": true,
+    "Detail": "Audio 100",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 100
+  },
+  {
+    "Url": "http://sv2hnh.no-ip.org:8901/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://websdr.lz2kac.org:8901/",
+    "Reachable": false,
+    "Detail": "Timed out",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://websdr3.kfsdr.com:8903/",
+    "Reachable": false,
+    "Detail": "No audio",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://hackgreensdr.org:8902/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://sdr.shbrg.nl:9002/",
+    "Reachable": false,
+    "Detail": "No audio",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://g0xbuwebsdr.ddns.net:8901/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://sv4bfb.ddns.net/",
+    "Reachable": true,
+    "Detail": "Audio 85",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 85
+  },
+  {
+    "Url": "http://vhf-goonhilly.batc.org.uk:8902/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://g0xbuwebsdr.ddns.net:8902/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://sebagolakesdr.us:8901/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://rietisdr.iu0esp.it:8901/",
+    "Reachable": false,
+    "Detail": "Timed out",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://phermosa.dyndns.org:8901/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://websdr5.sdrutah.org:8905/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://dk0te.inf.dhbw-ravensburg.de:8901/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://185.199.176.46:8092/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://9a1cra.ddns.net:8902/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://lu6flz.no-ip.org:7999/",
+    "Reachable": true,
+    "Detail": "Audio 85",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 85
+  },
+  {
+    "Url": "http://sdr.codedv.com:8091/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://websdr.info:8901/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://sdr.kf5jmd.com:8901/",
+    "Reachable": true,
+    "Detail": "Audio 90",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 90
+  },
+  {
+    "Url": "http://sdr.osthessenfunk.de/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://cb0mtl.selfhost.eu:8080/",
+    "Reachable": false,
+    "Detail": "Timed out",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://9a7aof.ddns.net:8905/",
+    "Reachable": false,
+    "Detail": "No audio",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://makrisv2amk.ddns.me:58901/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://websdr.imorozov.info:8901/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://itapeva.websdr.com.br:8901/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://websdr.electrosystem.ru:8081/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://websdr.afunk.hs-esslingen.de/",
+    "Reachable": true,
+    "Detail": "Audio 72",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 72
+  },
+  {
+    "Url": "http://sy9cgz.ddns.net:8901/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://hamradio.sv2yj.live:8901/",
+    "Reachable": true,
+    "Detail": "Audio 77",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 77
+  },
+  {
+    "Url": "http://websdr.sk4ko.com:8901/",
+    "Reachable": true,
+    "Detail": "Audio 86",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 86
+  },
+  {
+    "Url": "http://varadero1000.ddns.net:8901/",
+    "Reachable": true,
+    "Detail": "Audio 85",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 85
+  },
+  {
+    "Url": "http://217.155.0.218/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://stream.sdr48.ru:8901/",
+    "Reachable": false,
+    "Detail": "No audio",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://paraibuna.websdr.com.br:8901/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://garypaucha.ddns.net:8901/",
+    "Reachable": true,
+    "Detail": "Audio 86",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 86
+  },
+  {
+    "Url": "http://sdr.websdrmaasbree.nl:8909/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://websdr.k1ra.us:8901/",
+    "Reachable": true,
+    "Detail": "Audio 100",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 100
+  },
+  {
+    "Url": "http://websdr.db0nt.de:8090/",
+    "Reachable": true,
+    "Detail": "Audio 72",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 72
+  },
+  {
+    "Url": "http://websdr.dynv6.net:8901/",
+    "Reachable": false,
+    "Detail": "\uC54C\uB824\uC9C4 \uD638\uC2A4\uD2B8\uAC00 \uC5C6\uC2B5\uB2C8\uB2E4.",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://sv1cmg.no-ip.org/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://kj6eo.com:8901/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://n8mdp.ddns.net:8904/",
+    "Reachable": true,
+    "Detail": "Audio 85",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 85
+  },
+  {
+    "Url": "http://44.31.241.12:8901/",
+    "Reachable": true,
+    "Detail": "Audio 100",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 100
+  },
+  {
+    "Url": "http://na5b.com:8902/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://sdrlouvetel.com.br/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://freebands.websdrbordeaux.fr:9000/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://ub3aww.ru:8888/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://sdr.ge:8901/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://makrisv2amk.ddns.me:9001/",
+    "Reachable": false,
+    "Detail": "No audio",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://44.31.241.13:8901/",
+    "Reachable": true,
+    "Detail": "Audio 100",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 100
+  },
+  {
+    "Url": "http://websdr.republicaoa6.com:8091/",
+    "Reachable": true,
+    "Detail": "Audio 79",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 79
+  },
+  {
+    "Url": "http://alfredomarcondes.sdr.net.br:37001/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://142.44.211.133:8091/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://sv0xbs.ddns.net:8901/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://sv2czf.ddns.me:8901/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://websdr.info:8902/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://siros1.ddns.net:8901/",
+    "Reachable": false,
+    "Detail": "Timed out",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://sdr.websdrmaasbree.nl:8908/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://slc2meters.sdrutah.org:8901/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://178.27.119.120:8901/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://89.242.7.86/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://vik.for-more.biz:8071/",
+    "Reachable": true,
+    "Detail": "Audio 73",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 73
+  },
+  {
+    "Url": "http://kb5avy.hopto.org:8901/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://websdr.pa0nvy.nl:8901/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://jimjackii.no-ip.org:8091/",
+    "Reachable": true,
+    "Detail": "Audio 86",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 86
+  },
+  {
+    "Url": "http://websdr.ce3waq.cl:8091/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://91.201.190.4:8901/",
+    "Reachable": true,
+    "Detail": "Audio 86",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 86
+  },
+  {
+    "Url": "http://websdr.is0grb.it:8902/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://link.radiopaulafm.com:20002/",
+    "Reachable": true,
+    "Detail": "Audio 76",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 76
+  },
+  {
+    "Url": "http://websdr.is0grb.it:8903/",
+    "Reachable": true,
+    "Detail": "Audio 86",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 86
+  },
+  {
+    "Url": "http://websdr.viewdns.net:8073/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://stafford.160m.net:8081/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://websdr.pi2ehv.ampr.org:8901/",
+    "Reachable": true,
+    "Detail": "Audio 78",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 78
+  },
+  {
+    "Url": "http://[2600:8807:50c0:b:3b0:5b9d:f87f:bc1]:8903/",
+    "Reachable": false,
+    "Detail": "\uC5F0\uACB0\uD560 \uC218 \uC5C6\uB294 \uB124\uD2B8\uC6CC\uD06C\uC5D0\uC11C \uC18C\uCF13 \uC791\uC5C5\uC744 \uC2DC\uB3C4\uD588\uC2B5\uB2C8\uB2E4.",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://websdr2.kfsdr.com:8902/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://itajai.sdr.net.br:8082/",
+    "Reachable": false,
+    "Detail": "Timed out",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://stafford.160m.net:8082/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://websdr.housing.salleurl.edu:8901/",
+    "Reachable": false,
+    "Detail": "\uB300\uC0C1 \uCEF4\uD4E8\uD130\uC5D0\uC11C \uC5F0\uACB0\uC744 \uAC70\uBD80\uD588\uC73C\uBBC0\uB85C \uC5F0\uACB0\uD558\uC9C0 \uBABB\uD588\uC2B5\uB2C8\uB2E4.",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 0
+  },
+  {
+    "Url": "http://websdr4.kfsdr.com:8904/",
+    "Reachable": true,
+    "Detail": "Audio 100",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 100
+  },
+  {
+    "Url": "http://sixmetersct.ddns.net:20553/",
+    "Reachable": true,
+    "Detail": "Audio 84",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 84
+  },
+  {
+    "Url": "http://pu2swx.ddns.net:8901/",
+    "Reachable": true,
+    "Detail": "Audio 85",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 85
+  },
+  {
+    "Url": "http://rgg.nordhessenfunk.de/",
+    "Reachable": false,
+    "Detail": "No audio",
+    "CheckedUtc": "2026-09-26T21:39:19.6406601+09:00",
+    "ReceiveScore": 0
+  }
+]

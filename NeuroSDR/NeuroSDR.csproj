@@ -1,0 +1,132 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <_NeuroSDRParent>$([System.IO.Path]::GetFullPath('$(MSBuildProjectDirectory)\..\..'))</_NeuroSDRParent>
+    <SdrRoot Condition="'$(SdrRoot)' == '' AND Exists('$(_NeuroSDRParent)\sdr\samples\sstv\EnsSstv.Jnx\EnsSstv.Jnx.csproj')">$(_NeuroSDRParent)\sdr\</SdrRoot>
+    <SdrRoot Condition="'$(SdrRoot)' == '' AND Exists('$(_NeuroSDRParent)\samples\sstv\EnsSstv.Jnx\EnsSstv.Jnx.csproj')">$(_NeuroSDRParent)\</SdrRoot>
+    <SdrRoot Condition="'$(SdrRoot)' == ''">$(_NeuroSDRParent)\</SdrRoot>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <InvariantGlobalization>false</InvariantGlobalization>
+    <AssemblyName>NeuroSDR</AssemblyName>
+    <RootNamespace>NeuroSDR</RootNamespace>
+    <Version>0.1.0</Version>
+    <AssemblyVersion>0.1.0.0</AssemblyVersion>
+    <FileVersion>0.1.0.0</FileVersion>
+    <InformationalVersion>0.1</InformationalVersion>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+    <ApplicationIcon>Assets\neurosdr.ico</ApplicationIcon>
+    <Product>NeuroSDR</Product>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+    <PlatformTarget Condition="'$(Platform)' != 'x86'">x64</PlatformTarget>
+    <PlatformTarget Condition="'$(Platform)' == 'x86'">x86</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="Assets\**\*" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="neurosdrpreset.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\sdr_servers_active.csv" Link="sdr_servers_active.csv" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="directory\kiwisdr_com.js" Condition="Exists('directory\kiwisdr_com.js')" CopyToOutputDirectory="PreserveNewest" Link="directory\kiwisdr_com.js" />
+    <None Include="directory\websdrlist_fmt2.json" Condition="Exists('directory\websdrlist_fmt2.json')" CopyToOutputDirectory="PreserveNewest" Link="directory\websdrlist_fmt2.json" />
+    <None Include="directory\websdrlistk.tmp" Condition="Exists('directory\websdrlistk.tmp')" CopyToOutputDirectory="PreserveNewest" Link="directory\websdrlistk.tmp" />
+    <None Include="directory\site-reachability.json" Condition="Exists('directory\site-reachability.json')" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" Link="site-reachability.json" />
+
+    <!--
+      Native SDR DLLs (MSVC / existing stack).
+      ens_lte.dll + MinGW runtimes are experimental and MUST NOT ship in publish/AOT packs.
+      LteSib1Native/ is a separate CMake tree (not a ProjectReference) — keep it out of VS Publish.
+    -->
+    <_NativeWinX64 Include="native\win-x64\*.dll" />
+    <_NativeWinX64 Remove="&#xA;      native\win-x64\ens_lte.dll;&#xA;      native\win-x64\libfftw3f-3.dll;&#xA;      native\win-x64\libgcc_s_seh-1.dll;&#xA;      native\win-x64\libstdc++-6.dll;&#xA;      native\win-x64\libwinpthread-1.dll;&#xA;      native\win-x64\libmbedcrypto-16.dll&#xA;    " />
+    <None Include="@(_NativeWinX64)" Condition="'$(PlatformTarget)' == 'x64'" Link="native\%(Filename)%(Extension)" CopyToOutputDirectory="Always" CopyToPublishDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+
+    <_NativeWinX86 Include="native\win-x86\*.dll" />
+    <_NativeWinX86 Remove="&#xA;      native\win-x86\ens_lte.dll;&#xA;      native\win-x86\libfftw3f-3.dll;&#xA;      native\win-x86\libgcc_s_seh-1.dll;&#xA;      native\win-x86\libgcc_s_sjlj-1.dll;&#xA;      native\win-x86\libstdc++-6.dll;&#xA;      native\win-x86\libwinpthread-1.dll;&#xA;      native\win-x86\libmbedcrypto-16.dll&#xA;    " />
+    <None Include="@(_NativeWinX86)" Condition="'$(PlatformTarget)' == 'x86'" Link="native\%(Filename)%(Extension)" CopyToOutputDirectory="Always" CopyToPublishDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+
+    <None Include="$(SdrRoot)samples\dmr\DsdFme.Example\native\dsdfme.dll" Condition="Exists('$(SdrRoot)samples\dmr\DsdFme.Example\native\dsdfme.dll')" Link="dsdfme.dll" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+    <None Include="native\win-x64\libcodec2.dll" Condition="'$(PlatformTarget)' == 'x64' AND Exists('native\win-x64\libcodec2.dll')" Link="libcodec2.dll" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+    <None Include="native\win-x86\libcodec2.dll" Condition="'$(PlatformTarget)' == 'x86' AND Exists('native\win-x86\libcodec2.dll')" Link="libcodec2.dll" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+    <None Include="native\ENFILTER-NOTES.txt" Condition="Exists('native\ENFILTER-NOTES.txt')" Link="licenses\ENFILTER-NOTES.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="native\RNNOISE-COPYING.txt" Condition="Exists('native\RNNOISE-COPYING.txt')" Link="licenses\RNNOISE-COPYING.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="native\RTL-SDR-BINARIES.txt" Link="licenses\RTL-SDR-BINARIES.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="native\RTL-SDR-COPYING.txt" Link="licenses\RTL-SDR-COPYING.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="native\LIBUSB-COPYING.txt" Link="licenses\LIBUSB-COPYING.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="native\HACKRF-COPYING.txt" Link="licenses\HACKRF-COPYING.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="native\HACKRF-BINARIES.txt" Link="licenses\HACKRF-BINARIES.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="native\PTHREADS4W-LICENSE.txt" Link="licenses\PTHREADS4W-LICENSE.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="native\AIRSPY-BINARIES.txt" Link="licenses\AIRSPY-BINARIES.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="native\AIRSPYHF-BINARIES.txt" Link="licenses\AIRSPYHF-BINARIES.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="native\AIRSPYHF-COPYING.txt" Condition="Exists('native\AIRSPYHF-COPYING.txt')" Link="licenses\AIRSPYHF-COPYING.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="native\SOAPY-NOTES.txt" Link="licenses\SOAPY-NOTES.txt" CopyToOutputDirectory="PreserveNewest" />
+    <Compile Include="$(SdrRoot)samples\WebSDR\WebSdr\WebSdr\Ft8Codec.cs" Link="Plugins\Af\WebSdr\Ft8Codec.cs" />
+    <Compile Include="$(SdrRoot)samples\WebSDR\WebSdr\WebSdr\Ft8SlotReceiver.cs" Link="Plugins\Af\WebSdr\Ft8SlotReceiver.cs" />
+    <Compile Include="$(SdrRoot)samples\WebSDR\WebSdr\WebSdr\MorseViewer.cs" Link="Plugins\Af\WebSdr\MorseViewer.cs" />
+    <Compile Include="$(SdrRoot)samples\WebSDR\WebSdr\WebSdr\MorseTable.cs" Link="Plugins\Af\WebSdr\MorseTable.cs" />
+    <Compile Include="$(SdrRoot)samples\WebSDR\WebSdr\WebSdr\CwAdaptiveDecoder.cs" Link="Plugins\Af\WebSdr\CwAdaptiveDecoder.cs" />
+    <Compile Include="$(SdrRoot)samples\WebSDR\WebSdr\WebSdr\CwAdvancedOptions.cs" Link="Plugins\Af\WebSdr\CwAdvancedOptions.cs" />
+    <Compile Include="$(SdrRoot)samples\WebSDR\WebSdr\WebSdr\FldigiDsp.cs" Link="Plugins\Af\WebSdr\FldigiDsp.cs" />
+    <Compile Include="$(SdrRoot)samples\WebSDR\WebSdr\WebSdr\Protocol\AlawDecoder.cs" Link="Hardware\WebSdr\Protocol\AlawDecoder.cs" />
+    <Compile Include="$(SdrRoot)samples\WebSDR\WebSdr\WebSdr\Protocol\AudioStreamDecoder.cs" Link="Hardware\WebSdr\Protocol\AudioStreamDecoder.cs" />
+    <Compile Include="$(SdrRoot)samples\WebSDR\WebSdr\WebSdr\Protocol\BandInfo.cs" Link="Hardware\WebSdr\Protocol\BandInfo.cs" />
+    <Compile Include="$(SdrRoot)samples\WebSDR\WebSdr\WebSdr\Protocol\DemodMode.cs" Link="Hardware\WebSdr\Protocol\DemodMode.cs" />
+    <Compile Include="$(SdrRoot)samples\WebSDR\WebSdr\WebSdr\Protocol\ReceiverSettings.cs" Link="Hardware\WebSdr\Protocol\ReceiverSettings.cs" />
+    <Compile Include="$(SdrRoot)samples\WebSDR\WebSdr\WebSdr\Protocol\SoundStreamClient.cs" Link="Hardware\WebSdr\Protocol\SoundStreamClient.cs" />
+    <Compile Include="$(SdrRoot)samples\WebSDR\WebSdr\WebSdr\Protocol\WaterfallStreamClient.cs" Link="Hardware\WebSdr\Protocol\WaterfallStreamClient.cs" />
+    <Compile Include="$(SdrRoot)samples\WebSDR\WebSdr\WebSdr\Protocol\Kiwi\ImaAdpcmDecoder.cs" Link="Hardware\WebSdr\Protocol\Kiwi\ImaAdpcmDecoder.cs" />
+    <Compile Include="$(SdrRoot)samples\WebSDR\WebSdr\WebSdr\Protocol\Kiwi\KiwiHttpWarmup.cs" Link="Hardware\WebSdr\Protocol\Kiwi\KiwiHttpWarmup.cs" />
+    <Compile Include="$(SdrRoot)samples\WebSDR\WebSdr\WebSdr\Protocol\Kiwi\KiwiSoundClient.cs" Link="Hardware\WebSdr\Protocol\Kiwi\KiwiSoundClient.cs" />
+    <Compile Include="$(SdrRoot)samples\WebSDR\WebSdr\WebSdr\Protocol\Kiwi\KiwiWaterfallClient.cs" Link="Hardware\WebSdr\Protocol\Kiwi\KiwiWaterfallClient.cs" />
+    <Compile Include="$(SdrRoot)samples\WebSDR\WebSdr\WebSdr\Protocol\OpenWebRx\ImaAdpcmCodec.cs" Link="Hardware\WebSdr\Protocol\OpenWebRx\ImaAdpcmCodec.cs" />
+    <Compile Include="$(SdrRoot)samples\WebSDR\WebSdr\WebSdr\Protocol\OpenWebRx\OpenWebRxClient.cs" Link="Hardware\WebSdr\Protocol\OpenWebRx\OpenWebRxClient.cs" />
+    <Compile Include="$(SdrRoot)samples\sstv\EnsSstv.Host\Ita2.cs" Link="Plugins\Af\EnsSstv\Ita2.cs" />
+    <Compile Include="$(SdrRoot)samples\sstv\EnsSstv.Host\RttyDecoder.cs" Link="Plugins\Af\EnsSstv\RttyDecoder.cs" />
+    <Compile Include="$(SdrRoot)samples\sstv\EnsSstv.Host\weatherfax\WeatherFaxClockCorrect.cs" Link="Plugins\Af\EnsSstv\WeatherFaxClockCorrect.cs" />
+    <Compile Include="$(SdrRoot)samples\sstv\EnsSstv.Host\weatherfax\WeatherFaxConfig.cs" Link="Plugins\Af\EnsSstv\WeatherFaxConfig.cs" />
+    <Compile Include="$(SdrRoot)samples\sstv\EnsSstv.Host\weatherfax\WeatherFaxDecoder.cs" Link="Plugins\Af\EnsSstv\WeatherFaxDecoder.cs" />
+    <Compile Include="$(SdrRoot)samples\sstv\EnsSstv.Host\weatherfax\WeatherFaxGoertzel.cs" Link="Plugins\Af\EnsSstv\WeatherFaxGoertzel.cs" />
+    <Compile Include="$(SdrRoot)samples\sstv\EnsSstv.Host\weatherfax\WeatherFaxImageBuffer.cs" Link="Plugins\Af\EnsSstv\WeatherFaxImageBuffer.cs" />
+    <None Include="$(SdrRoot)samples\WebSDR\WebSdr\Ft8Native\bin\x64\Release\ft8.dll" Condition="'$(PlatformTarget)' == 'x64'" Link="ft8.dll" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+    <None Include="$(SdrRoot)samples\WebSDR\ft8_lib\LICENSE" Link="licenses\ft8_lib-LICENSE.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="$(SdrRoot)samples\adsb\libmodes-master\LICENSE" Link="licenses\libmodes-LICENSE.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\NeuroSDR.Web\wwwroot\**\*" Link="wwwroot\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NeuroSDR.Web\NeuroSDR.Web.csproj" />
+    <ProjectReference Include="$(SdrRoot)samples\sstv\EnsSstv.Jnx\EnsSstv.Jnx.csproj" />
+    <ProjectReference Include="$(SdrRoot)samples\sstv\EnsSstv.SlowRx\EnsSstv.SlowRx.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Concentus" Version="2.2.2" />
+    <PackageReference Include="SGP.NET" Version="1.5.0" />
+    <TrimmerRootAssembly Include="SGP.NET" />
+    <PackageReference Include="System.Speech" Version="10.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="sherpa-onnx">
+      <HintPath>lib\sherpa-onnx.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <None Include="lib\sherpa-onnx.dll" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+    <None Include="native\win-x64\sherpa-onnx-c-api.dll" Condition="'$(PlatformTarget)' == 'x64'" Link="sherpa-onnx-c-api.dll" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+    <None Include="native\win-x64\onnxruntime.dll" Condition="'$(PlatformTarget)' == 'x64'" Link="onnxruntime.dll" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+  </ItemGroup>
+
+</Project>

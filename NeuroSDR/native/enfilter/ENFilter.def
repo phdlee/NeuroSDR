@@ -1,0 +1,17 @@
+LIBRARY ENFilter
+EXPORTS
+    nr_config_default
+    nr_config_preset_voice
+    nr_config_preset_cw
+    nr_create
+    nr_destroy
+    nr_set_config
+    nr_get_config
+    nr_get_status
+    nr_reset
+    nr_frame_size
+    nr_sample_rate
+    nr_process_frame_f32
+    nr_process_s16
+    nr_get_cw_spectrum
+    nr_cw_arm_auto

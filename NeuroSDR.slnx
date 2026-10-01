@@ -1,0 +1,19 @@
+<Solution>
+
+  <!-- SSTV + NeuroSatellite are pulled in via NeuroSDR.csproj ProjectReference and $(SdrRoot). -->
+
+  <Project Path="NeuroSDR/NeuroSDR.csproj">
+
+    <Platform Project="x64" />
+
+  </Project>
+
+  <Project Path="KiwiSDRPlugin/KiwiSDRPlugin.csproj" />
+
+  <Project Path="NeuroSDR.Web/NeuroSDR.Web.csproj" />
+
+  <Project Path="NeuroSDR.RtlTcpTest/NeuroSDR.RtlTcpTest.csproj" />
+
+</Solution>
+
+

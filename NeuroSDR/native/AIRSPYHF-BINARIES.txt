@@ -1,0 +1,11 @@
+Airspy HF+ Windows native binaries
+==================================
+
+Files:
+- win-x86/airspyhf.dll  (from SDR# Core Includes / official Airspy HF+ host)
+
+x64: drop an architecture-matched airspyhf.dll into native/win-x64 (or install
+PothosSDR and use the SoapySDR airspyhf module). Build from source:
+https://github.com/airspy/airspyhf
+
+License: BSD-style — see upstream airspyhf LICENSE / AIRSPYHF-COPYING.txt.

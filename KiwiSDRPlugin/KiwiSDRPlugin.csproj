@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>KiwiSDRPlugin</RootNamespace>
+    <AssemblyName>KiwiSDRPlugin</AssemblyName>
+  </PropertyGroup>
+  <Target Name="CopyToEnSdrOutput" AfterTargets="Build">
+    <PropertyGroup>
+      <EnSdrOut>$(MSBuildThisFileDirectory)..\..\ENSdr\ENSdr\bin\$(Configuration)\net10.0-windows\</EnSdrOut>
+    </PropertyGroup>
+    <MakeDir Directories="$(EnSdrOut)" Condition="Exists('$(MSBuildThisFileDirectory)..\..\ENSdr\ENSdr')" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(EnSdrOut)" SkipUnchangedFiles="true" Condition="Exists('$(EnSdrOut)')" />
+    <Copy SourceFiles="$(MSBuildThisFileDirectory)KiwiSDRPlugin.ensdr-plugin.json" DestinationFolder="$(EnSdrOut)" SkipUnchangedFiles="true" Condition="Exists('$(EnSdrOut)')" />
+  </Target>
+  <ItemGroup>
+    <ProjectReference Include="..\..\samples\sstv\EnsSstv.Jnx\EnsSstv.Jnx.csproj" />
+    <ProjectReference Include="..\..\samples\sstv\EnsSstv.SlowRx\EnsSstv.SlowRx.csproj" />
+    <ProjectReference Include="..\..\ENSdr\ENSdr\ENSdr.csproj" />
+  </ItemGroup>
+</Project>

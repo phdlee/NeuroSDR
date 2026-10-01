@@ -1,0 +1,17 @@
+SoapySDR (optional multi-device facade)
+=======================================
+
+NeuroSDR does not bundle SoapySDR.dll. When PothosSDR (or another SoapySDR
+install) is present, NeuroSDR loads SoapySDR.dll from common paths such as:
+
+  %ProgramFiles%\PothosSDR\bin\SoapySDR.dll
+  %SOAPY_SDR_ROOT%\bin\SoapySDR.dll
+
+Installed Soapy modules then expose LimeSDR, PlutoSDR, BladeRF, USRP,
+AirspyHF (if no native DLL), and other drivers in the SOURCE list.
+
+Native adapters already cover RTL-SDR, HackRF, SDRplay, and Airspy; those
+Soapy drivers are skipped to avoid duplicate entries.
+
+Install: https://github.com/pothosware/PothosSDR/wiki
+Probe:   NeuroSDR.exe --probe-soapy

@@ -1,0 +1,14 @@
+[Bb]in/
+[Oo]bj/
+.vs/
+artifacts/
+_out/
+publish/
+*.user
+*.7z
+*.wav
+NeuroSDR-settings-*.json
+.cursor/
+LteSib1Native/build-mingw/
+NeuroSDR/native/codec2-build/
+NeuroSDR/native/codec2-mingw/

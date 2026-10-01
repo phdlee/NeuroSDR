@@ -1,0 +1,12 @@
+{
+  "ensdrPlugin": true,
+  "format": "AF.Visual",
+  "assembly": "KiwiSDRPlugin.dll",
+  "description": "KiwiSDR FAX / CW / FSK / CW Skimmer AF visual plugins",
+  "plugins": [
+    { "id": "builtin.af.kiwifax", "type": "KiwiSDRPlugin.KiwiFaxAfPlugin" },
+    { "id": "builtin.af.kiwicw", "type": "KiwiSDRPlugin.KiwiCwAfPlugin" },
+    { "id": "builtin.af.kiwifsk", "type": "KiwiSDRPlugin.KiwiFskAfPlugin" },
+    { "id": "builtin.af.kiwicwskimmer", "type": "KiwiSDRPlugin.KiwiCwSkimmerAfPlugin" }
+  ]
+}

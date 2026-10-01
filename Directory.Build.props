@@ -1,0 +1,27 @@
+<Project>
+
+  <!--
+
+    NeuroSDR may live at repo\sdr\NeuroSDR or repo\NeuroSDR (sibling of repo\sdr).
+
+    Prefer repo\sdr\samples when both layouts are possible.
+
+  -->
+
+  <PropertyGroup>
+
+    <_NeuroSDRSolutionDir>$(MSBuildThisFileDirectory)</_NeuroSDRSolutionDir>
+
+    <_NeuroSDRParent>$([System.IO.Path]::GetFullPath('$(_NeuroSDRSolutionDir)..\'))</_NeuroSDRParent>
+
+    <SdrRoot Condition="Exists('$(_NeuroSDRParent)sdr\samples\sstv\EnsSstv.Jnx\EnsSstv.Jnx.csproj')">$(_NeuroSDRParent)sdr\</SdrRoot>
+
+    <SdrRoot Condition="'$(SdrRoot)' == '' AND Exists('$(_NeuroSDRParent)samples\sstv\EnsSstv.Jnx\EnsSstv.Jnx.csproj')">$(_NeuroSDRParent)</SdrRoot>
+
+    <SdrRoot Condition="'$(SdrRoot)' == ''">$(_NeuroSDRParent)</SdrRoot>
+
+  </PropertyGroup>
+
+</Project>
+
+

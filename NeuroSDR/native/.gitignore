@@ -1,0 +1,6 @@
+codec2-src/
+codec2-mingw/
+codec2-build/
+enfilter/build/
+w64devkit/
+w64devkit-dl/

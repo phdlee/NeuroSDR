@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#10161f" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>NeuroSDR</title>
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="stylesheet" href="/desktop.css" />
+</head>
+<body>
+  <div id="app" class="shell">
+    <header class="chrome">
+      <div class="brand">
+        <span class="mark">N</span>
+        <div>
+          <strong>NeuroSDR</strong>
+          <small id="connStatus">connecting…</small>
+        </div>
+      </div>
+      <div class="chrome-actions">
+        <span id="audioStatus" class="audio-status muted">audio…</span>
+        <button type="button" id="installBtn" class="btn ghost" hidden>Install</button>
+      </div>
+    </header>
+
+    <div class="workspace">
+      <section class="upper">
+        <!-- RX CONTROL — mirrors desktop radio panel -->
+        <aside class="rx-panel" id="rxPanel">
+          <div class="rx-title">NeuroSDR · RX CONTROL</div>
+
+          <div class="rx-freq-row">
+            <div class="freq-display" id="freqDisplay" title="Click a digit · mouse wheel · or type">
+              <div class="digits" id="freqDigits"></div>
+            </div>
+            <div class="rx-side-meters">
+              <div class="meter"><span>RF</span><div class="meter-bar"><i id="rfMeter"></i></div></div>
+              <div class="meter"><span>AF</span><div class="meter-bar"><i id="afMeter"></i></div></div>
+              <div class="led-row">
+                <span id="sqlLed1" class="led" title="SQL 1">SQL1</span>
+                <span id="sqlLed2" class="led" title="SQL 2">SQL2</span>
+                <span id="stereoLed" class="led" title="STEREO" hidden>STEREO</span>
+              </div>
+            </div>
+            <div class="rx-actions">
+              <button type="button" id="rxBtn" class="btn rx-start">RX START</button>
+            </div>
+          </div>
+
+          <div class="rx-source-row">
+            <label class="src-label">Source
+              <select id="sourceSelect"></select>
+            </label>
+            <label class="gain-label">RF GAIN <span id="gainVal">75</span>
+              <input id="gainSlider" type="range" min="0" max="100" />
+            </label>
+          </div>
+
+          <div class="scene-row">
+            <span class="scene-label">SCENE</span>
+            <select id="sceneSelect"></select>
+          </div>
+
+          <div class="channel-strip">
+            <button type="button" id="channelAddHint" class="btn chip-btn add-btn" title="Add on desktop">ADD</button>
+            <div id="channelChips" class="channel-chips"></div>
+          </div>
+          <div class="rx-sep"></div>
+
+          <div class="site-row" id="siteRow" hidden>
+            <span class="scene-label">SITE</span>
+            <input id="siteSearch" type="search" placeholder="Search Kiwi / WebSDR / OpenWebRX" />
+            <select id="siteSelect"></select>
+          </div>
+
+          <div class="chip-row" id="modeGrid"></div>
+          <div id="modeExtend" class="extend-panel" hidden></div>
+          <div class="chip-row bands" id="bandGrid"></div>
+
+          <div class="bw-row">
+            <span id="bwLabel" class="bw-readout">BW —</span>
+            <div class="chip-row tight" id="bwGrid"></div>
+            <button type="button" class="btn chip-btn" data-bw-nudge="-1">BW−</button>
+            <button type="button" class="btn chip-btn" data-bw-nudge="1">BW+</button>
+          </div>
+
+          <div class="level-row">
+            <div class="level-block">
+              <div class="level-head"><span>OUT 1</span><span id="vol1Val">—</span></div>
+              <input id="vol1" type="range" min="0" max="100" class="vol" />
+              <div class="sql-line">
+                <label><input id="sql1" type="checkbox" /> SQL 1</label>
+                <input id="sql1Thr" type="number" min="-140" max="0" step="1" />
+              </div>
+            </div>
+            <div class="level-block" id="out2Block">
+              <div class="level-head"><span>OUT 2</span><span id="vol2Val">—</span></div>
+              <input id="vol2" type="range" min="0" max="100" class="vol" />
+              <div class="sql-line">
+                <label><input id="sql2" type="checkbox" /> SQL 2</label>
+                <input id="sql2Thr" type="number" min="-140" max="0" step="1" />
+              </div>
+            </div>
+          </div>
+
+          <div class="dsp-row">
+            <label><input id="agcChk" type="checkbox" /> AF AGC</label>
+            <label><input id="nrChk" type="checkbox" /> NR</label>
+            <input id="nrSlider" type="range" min="0" max="100" />
+            <label><input id="notchChk" type="checkbox" /> NOTCH</label>
+            <label><input id="afFilterChk" type="checkbox" /> AF FILTER</label>
+          </div>
+
+          <div class="web-vol">
+            <label>Web volume <span id="webVolVal">70%</span>
+              <input id="webVol" type="range" min="0" max="100" value="70" />
+            </label>
+          </div>
+
+          <div class="sub-vfo">
+            <div class="sub-head">SUB VFO · INDEPENDENT CHANNEL DECODING</div>
+            <div id="subVfoList" class="sub-list"></div>
+          </div>
+
+          <div id="satBanner" class="sat-banner" hidden></div>
+          <div id="statusLine" class="rx-status"></div>
+        </aside>
+
+        <!-- AF Plugins: as many columns as fit; overflow → right tabs -->
+        <section class="af-panel">
+          <div class="af-head">
+            <h2>AF Plugins</h2>
+          </div>
+          <div class="af-body">
+            <div id="afPanes" class="af-panes"></div>
+            <aside id="afOverflow" class="af-overflow" hidden>
+              <div id="afTabs" class="af-tabs"></div>
+              <div id="afOverflowPane" class="af-pane overflow-pane"></div>
+            </aside>
+          </div>
+        </section>
+      </section>
+
+      <!-- RF Spectrum / Waterfall — full width like desktop center -->
+      <section class="rf-stage">
+        <div class="rf-overlay" id="rfOverlay">
+          <button type="button" id="centerTuneBtn" class="btn overlay">Center on Current Frequency</button>
+          <button type="button" id="fullSpanBtn" class="btn overlay">Wider view</button>
+          <button type="button" id="narrowSpanBtn" class="btn overlay">Narrow view</button>
+        </div>
+        <canvas id="spectrum" width="1280" height="160" aria-label="RF spectrum"></canvas>
+        <canvas id="waterfall" width="1280" height="280" aria-label="RF waterfall"></canvas>
+        <div class="rf-footer">
+          <span id="freqLabel">—</span>
+          <span id="signalLabel" class="muted"></span>
+          <span class="hint">Click / drag spectrum to tune · wheel zooms view (desktop host)</span>
+        </div>
+      </section>
+
+      <section class="af-stage">
+        <div class="af-overlay-text" id="digitalOverlay" hidden></div>
+        <canvas id="afSpectrum" width="1280" height="72" aria-label="AF spectrum"></canvas>
+        <canvas id="afWaterfall" width="1280" height="96" aria-label="AF waterfall"></canvas>
+      </section>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@microsoft/signalr@8.0.7/dist/browser/signalr.min.js"></script>
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

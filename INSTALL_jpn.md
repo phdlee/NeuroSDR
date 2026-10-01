@@ -4,8 +4,10 @@
 
 ## 1. 入手
 
-1. GitHub **Releases** から最新の Windows zip（通常 x64）をダウンロードします。
+1. GitHub **[Releases](https://github.com/phdlee/NeuroSDR/releases)** から **NeuroSDR-v0.1-win-x64.zip**（または最新 zip）をダウンロードします。
 2. 書き込み可能なフォルダに**すべて**展開します（例: `C:\NeuroSDR`）。
+
+スクリーンショット付きの詳しい手順は **[https://www.hamskey.com](https://www.hamskey.com)**（KD8CEC）をご覧ください。
 
 ## 2. zip に含まれるもの
 
@@ -70,3 +72,9 @@ Visual Studio、.NET SDK、この Git のクローン、native DLL の自前ビ�
 ---
 
 [English](INSTALL.md) · [한국어](INSTALL_kor.md) · [中文](INSTALL_chn.md) · [README_jpn.md](README_jpn.md)
+
+---
+
+NeuroSDR · **KD8CEC**
+
+スクリーンショット付きの詳しいインストール／使い方マニュアルはブログに掲載予定です。図解ガイドと更新情報は **[https://www.hamskey.com](https://www.hamskey.com)** をご覧ください。

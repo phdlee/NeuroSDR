@@ -62,3 +62,9 @@ WFM은 250 kS/s 경로에서 직접 복조한다. 협대역 모드는 127탭 FIR
 샘플 프로젝트 SDR#와 SDR++에서 확인한 핵심 패턴은 장치 계층, 신호 처리 계층, 표시 계층의 분리와 FFT 출력의 독립 갱신이다. 코드는 복사하지 않았으며 NeuroSDR의 구현은 새로 작성했다. 특히 SDR++는 GPL-3.0이므로 향후에도 소스 복사는 피하고 알고리즘/구조 비교 자료로만 취급한다.
 
 Native AOT를 고려해 런타임 리플렉션, 동적 프록시 및 불필요한 관리 패키지를 피한다. 하드웨어 네이티브 API는 얇은 명시적 ABI 어댑터에서만 사용한다. .NET 10.0.302에서는 WinForms trim 차단을 명시적으로 해제한 `win-x64` Native AOT 게시와 현재 RSP1 UI 경로가 실제 검증을 통과했다. 다만 WinForms 내부 AOT 경고와 runtime plugin assembly 탐색 제약이 남아 있으므로 일반 빌드와 AOT 배포를 별도 publish profile로 유지한다.
+
+---
+
+NeuroSDR by **KD8CEC**
+
+Detailed install and using manuals with screenshots will be published on the blog. Please visit **[https://www.hamskey.com](https://www.hamskey.com)** for the full picture guides and updates.

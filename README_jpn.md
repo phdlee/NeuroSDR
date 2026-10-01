@@ -1,6 +1,6 @@
 # NeuroSDR
 
-**バージョン 0.1** — Windows ソフトウェア無線（SDR）受信機
+**バージョン 0.1** — Windows ソフトウェア無線（SDR）受信機 · **KD8CEC**
 
 ほとんどの方は**コンパイル不要**です。リリース用 zip をダウンロードして展開し、`NeuroSDR.exe` を実行してください。
 
@@ -51,3 +51,9 @@
 NeuroSDR/          メイン Windows アプリ
 KiwiSDRPlugin/     任意 AF プラグインのサンプル
 ```
+
+---
+
+NeuroSDR · **KD8CEC**
+
+スクリーンショット付きの詳しいインストール／使い方マニュアルはブログに掲載予定です。図解ガイドと更新情報は **[https://www.hamskey.com](https://www.hamskey.com)** をご覧ください。

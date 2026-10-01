@@ -4,8 +4,10 @@
 
 ## 1. 받기
 
-1. GitHub **Releases**에서 최신 Windows zip(보통 x64)을 받습니다.
+1. GitHub **[Releases](https://github.com/phdlee/NeuroSDR/releases)** 에서 **NeuroSDR-v0.1-win-x64.zip**(또는 최신 zip)을 받습니다.
 2. 쓰기 가능한 폴더에 **전부** 압축을 풉니다 (예: `C:\NeuroSDR`).
+
+스크린샷이 많은 설치/사용 안내는 **[https://www.hamskey.com](https://www.hamskey.com)** (KD8CEC) 를 봐 주세요.
 
 ## 2. zip에 이미 들어 있는 것
 
@@ -70,3 +72,9 @@ Visual Studio, .NET SDK, 이 Git 저장소 클론, native DLL 직접 빌드.
 ---
 
 [English install](INSTALL.md) · [日本語](INSTALL_jpn.md) · [中文](INSTALL_chn.md) · [README_kor.md](README_kor.md)
+
+---
+
+NeuroSDR · **KD8CEC**
+
+스크린샷이 포함된 자세한 설치/사용 메뉴얼은 블로그에 올릴 예정입니다. 전체 안내와 업데이트는 **[https://www.hamskey.com](https://www.hamskey.com)** 을 방문해 주세요.

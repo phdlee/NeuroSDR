@@ -1,6 +1,6 @@
 # NeuroSDR
 
-**Version 0.1** — Windows software-defined radio receiver
+**Version 0.1** — Windows software-defined radio receiver by **KD8CEC**
 
 Most people do **not** need to compile anything. Download a release archive, extract it, and run `NeuroSDR.exe`.
 
@@ -22,11 +22,13 @@ Most people do **not** need to compile anything. Download a release archive, ext
 
 ## Quick start
 
-1. Open the latest **Release** on this GitHub repository and download the zip.
-2. Follow **[INSTALL.md](INSTALL.md)** (driver notes for your radio, if any).
+1. Open **[Releases](https://github.com/phdlee/NeuroSDR/releases)** and download **NeuroSDR-v0.1-win-x64.zip** (or the newest release zip).
+2. Follow **[INSTALL.md](INSTALL.md)** (driver notes for your radio, if any). For RTL-SDR, use the **latest Zadig**—older Zadig builds often fail to install WinUSB.
 3. Run `NeuroSDR.exe` → pick a **SOURCE** → **RX START**.
 
 You do not need Visual Studio, the .NET SDK, or this source tree to use NeuroSDR day to day.
+
+Longer install and using manuals **with screenshots** will be published on the blog: **[https://www.hamskey.com](https://www.hamskey.com)**. Please visit there for the full picture guides.
 
 ## Hardware at a glance
 
@@ -41,7 +43,7 @@ Bundled native libraries ship inside the release folder. Details: [INSTALL.md](I
 
 ## Development and maintenance
 
-**Design, coding, documentation, and GitHub maintenance for NeuroSDR are done by AI (Grok 4.7).** Human review and hardware testing guide releases; the day-to-day engineering and repo work are AI-driven.
+**Design, coding, documentation, and GitHub maintenance for NeuroSDR are done by AI (Grok 4.7).** Human review and hardware testing by **KD8CEC** guide releases; the day-to-day engineering and repo work are AI-driven.
 
 ## Source code
 
@@ -55,3 +57,9 @@ KiwiSDRPlugin/     optional AF plugin sample project
 ## License / third-party
 
 Vendor SDRs and native libraries keep their own licenses. See files under `NeuroSDR/native/` (COPYING / BINARIES notes) in the source tree and the licenses that ship with each release package.
+
+---
+
+NeuroSDR by **KD8CEC**
+
+Detailed install and using manuals with screenshots will be published on the blog. Please visit **[https://www.hamskey.com](https://www.hamskey.com)** for the full picture guides and updates.

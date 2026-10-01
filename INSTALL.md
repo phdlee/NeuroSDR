@@ -2,12 +2,16 @@
 
 This guide is for people who **download a release archive** and run NeuroSDR. You do not need to compile the project.
 
+Author: **KD8CEC** · Blog (screenshot manuals): **[https://www.hamskey.com](https://www.hamskey.com)**
+
 ## 1. Get the software
 
-1. Open the NeuroSDR GitHub **Releases** page.
-2. Download the latest Windows zip (x64 unless you specifically need x86).
+1. Open the NeuroSDR GitHub **[Releases](https://github.com/phdlee/NeuroSDR/releases)** page.
+2. Download **NeuroSDR-v0.1-win-x64.zip** (or the newest Windows x64 zip).
 3. Extract the whole archive to a folder you can write to (for example `C:\NeuroSDR` or your Documents folder).  
    Do not run from a half-extracted archive or from a read-only network share if you can avoid it.
+
+For a longer, screenshot-based install and using walkthrough, see **[https://www.hamskey.com](https://www.hamskey.com)**.
 
 ## 2. What is already included
 
@@ -93,3 +97,9 @@ Those are for contributors. Everyday use is: **download release → extract → 
 
 Other languages: [한국어](INSTALL_kor.md) · [日本語](INSTALL_jpn.md) · [中文](INSTALL_chn.md)  
 Project overview: [README.md](README.md)
+
+---
+
+NeuroSDR by **KD8CEC**
+
+Detailed install and using manuals with screenshots will be published on the blog. Please visit **[https://www.hamskey.com](https://www.hamskey.com)** for the full picture guides and updates.

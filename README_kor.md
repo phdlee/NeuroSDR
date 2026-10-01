@@ -1,6 +1,6 @@
 # NeuroSDR
 
-**버전 0.1** — Windows 소프트웨어 정의 라디오(SDR) 수신기
+**버전 0.1** — Windows 소프트웨어 정의 라디오(SDR) 수신기 · **KD8CEC**
 
 대부분은 **컴파일이 필요 없습니다.** 릴리스 zip을 받아 풀고 `NeuroSDR.exe`만 실행하면 됩니다.
 
@@ -51,3 +51,9 @@
 NeuroSDR/          메인 Windows 앱
 KiwiSDRPlugin/     선택 AF 플러그인 샘플
 ```
+
+---
+
+NeuroSDR · **KD8CEC**
+
+스크린샷이 포함된 자세한 설치/사용 메뉴얼은 블로그에 올릴 예정입니다. 전체 안내와 업데이트는 **[https://www.hamskey.com](https://www.hamskey.com)** 을 방문해 주세요.

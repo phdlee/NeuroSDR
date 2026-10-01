@@ -2,12 +2,14 @@
 
 This guide is for people who **download a release archive** and run NeuroSDR. You do not need to compile the project.
 
+**Start here:** get the zip from GitHub **[Releases](https://github.com/phdlee/NeuroSDR/releases)** (asset `NeuroSDR-v0.1-win-x64.zip`), then follow the steps below.
+
 Author: **KD8CEC** · Blog (screenshot manuals): **[https://www.hamskey.com](https://www.hamskey.com)**
 
 ## 1. Get the software
 
-1. Open the NeuroSDR GitHub **[Releases](https://github.com/phdlee/NeuroSDR/releases)** page.
-2. Download **NeuroSDR-v0.1-win-x64.zip** (or the newest Windows x64 zip).
+1. Open the NeuroSDR GitHub **[Releases](https://github.com/phdlee/NeuroSDR/releases)** page (not the source Code zip).
+2. Under **Assets**, download **NeuroSDR-v0.1-win-x64.zip** (or the newest Windows x64 zip).
 3. Extract the whole archive to a folder you can write to (for example `C:\NeuroSDR` or your Documents folder).  
    Do not run from a half-extracted archive or from a read-only network share if you can avoid it.
 

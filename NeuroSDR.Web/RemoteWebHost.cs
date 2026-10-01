@@ -21,6 +21,7 @@ public sealed class RemoteWebHost : IAsyncDisposable
     private WebApplication? _app;
     private CancellationTokenSource? _cts;
     private Action<RadioRemoteSnapshot>? _onState;
+    private Action<RadioLiveUpdate>? _onLive;
     private Action<SpectrumRemoteFrame>? _onSpectrum;
     private Action<SpectrumRemoteFrame>? _onAfSpectrum;
     private Action<byte[]>? _onAudio;
@@ -106,6 +107,11 @@ public sealed class RemoteWebHost : IAsyncDisposable
             if (Volatile.Read(ref _stopped) != 0) return;
             _ = hub.Clients.All.SendAsync("state", snapshot);
         };
+        _onLive = live =>
+        {
+            if (Volatile.Read(ref _stopped) != 0) return;
+            _ = hub.Clients.All.SendAsync("live", live);
+        };
         _onSpectrum = frame =>
         {
             if (Volatile.Read(ref _stopped) != 0) return;
@@ -131,6 +137,7 @@ public sealed class RemoteWebHost : IAsyncDisposable
             _ = hub.Clients.All.SendAsync("af", evt);
         };
         _radio.StateChanged += _onState;
+        _radio.LiveChanged += _onLive;
         _radio.SpectrumAvailable += _onSpectrum;
         _radio.AfSpectrumAvailable += _onAfSpectrum;
         _radio.AudioAvailable += _onAudio;
@@ -195,6 +202,7 @@ public sealed class RemoteWebHost : IAsyncDisposable
     private void DetachRadioEvents()
     {
         if (_onState is not null) { try { _radio.StateChanged -= _onState; } catch { } _onState = null; }
+        if (_onLive is not null) { try { _radio.LiveChanged -= _onLive; } catch { } _onLive = null; }
         if (_onSpectrum is not null) { try { _radio.SpectrumAvailable -= _onSpectrum; } catch { } _onSpectrum = null; }
         if (_onAfSpectrum is not null) { try { _radio.AfSpectrumAvailable -= _onAfSpectrum; } catch { } _onAfSpectrum = null; }
         if (_onAudio is not null) { try { _radio.AudioAvailable -= _onAudio; } catch { } _onAudio = null; }

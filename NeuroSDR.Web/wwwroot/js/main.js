@@ -622,6 +622,38 @@ function escapeHtml(s) {
 }
 
 /** @param {import('./types.js').RadioRemoteSnapshot} s */
+function applyLive(s) {
+  if (!s) return;
+  if (state) {
+    state.running = !!s.running;
+    state.signalDb = s.signalDb;
+    state.audioLevelDb = s.audioLevelDb;
+    if (Number.isFinite(s.frequencyHz)) state.frequencyHz = s.frequencyHz;
+  }
+  const rx = $("rxBtn");
+  if (rx) {
+    rx.textContent = s.running ? "RX STOP" : "RX START";
+    rx.classList.toggle("on", !!s.running);
+  }
+  const signal = Number.isFinite(s.signalDb) ? s.signalDb : -140;
+  const audioDb = Number.isFinite(s.audioLevelDb) ? s.audioLevelDb : -140;
+  const rf = $("rfMeter");
+  if (rf) rf.style.width = `${Math.max(0, Math.min(100, ((signal + 140) / 140) * 100))}%`;
+  const af = $("afMeter");
+  if (af) af.style.width = `${Math.max(0, Math.min(100, ((audioDb + 80) / 80) * 100))}%`;
+  $("sqlLed1")?.classList.toggle("on", !!s.squelch1Open);
+  $("sqlLed2")?.classList.toggle("on", !!s.squelch2Open);
+  const stereoLed = $("stereoLed");
+  if (stereoLed) stereoLed.classList.toggle("on", !!s.stereoLed);
+  if (s.status) {
+    const line = $("statusLine");
+    if (line) line.textContent = s.status;
+  }
+  const signalLabel = $("signalLabel");
+  if (signalLabel && state?.mode) signalLabel.textContent = `${signal.toFixed(1)} dB · ${state.mode}`;
+  if (Number.isFinite(s.frequencyHz) && selectedDigit < 0) renderFreqDigits(s.frequencyHz);
+}
+
 function applyState(s) {
   const hz = spectrumView.preferredFrequency(s.frequencyHz);
   state = { ...s, frequencyHz: hz };
@@ -769,7 +801,7 @@ function renderModeExtend(s) {
 
   if (digital) {
     host.innerHTML = `
-      <span>${mode === "FREEDV" ? "FREEDV · CODEC2" : "DIGITAL MODE · PCM"}</span>
+      <span>${mode === "FREEDV" ? "FREEDV · decoded voice" : "DIGITAL · decoded voice only"}</span>
       ${mode === "FREEDV" ? `
         <label>MODEM <select id="fdvModem">${["Auto","700D","700E","1600","700C"].map((m) =>
           `<option ${m === (s.freeDvModem || "Auto") ? "selected" : ""}>${m}</option>`).join("")}</select></label>
@@ -900,6 +932,21 @@ function wireControls() {
     if (!state) return;
     hubInvoke("SetViewBandwidth", Math.max(10_000, Math.floor(state.viewBandwidthHz / 2)));
   });
+  let viewWheelSpan = 0;
+  let viewWheelTimer = 0;
+  for (const id of ["spectrum", "waterfall"]) {
+    $(id)?.addEventListener("wheel", (ev) => {
+      if (!state?.viewBandwidthHz) return;
+      ev.preventDefault();
+      const base = viewWheelSpan || state.viewBandwidthHz;
+      const next = ev.deltaY > 0
+        ? Math.min(base * 1.25, 30_000_000)
+        : Math.max(10_000, base / 1.25);
+      viewWheelSpan = Math.round(next);
+      clearTimeout(viewWheelTimer);
+      viewWheelTimer = setTimeout(() => hubInvoke("SetViewBandwidth", viewWheelSpan), 180);
+    }, { passive: false });
+  }
 
   $("freqDisplay").addEventListener("keydown", (ev) => {
     if (selectedDigit < 0 || !state) return;
@@ -940,6 +987,7 @@ async function start() {
   const token = readToken();
   hub = createHub(token);
   hub.on("state", (s) => applyState(normalize(s)));
+  hub.on("live", (s) => applyLive(normalize(s)));
   hub.on("spectrum", (f) => spectrumView.draw(normalize(f)));
   hub.on("afSpectrum", (f) => afView.draw(normalize(f)));
   hub.on("audio", (msg) => {

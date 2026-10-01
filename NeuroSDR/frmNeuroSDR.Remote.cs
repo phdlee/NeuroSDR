@@ -18,6 +18,7 @@ public partial class frmNeuroSDR
     private float[] _remoteAudioStaging = new float[RemoteAudioPacketSamples * 4];
     private int _remoteAudioStagingCount;
     private float _remoteAudioAgc = 1f;
+    private bool _remoteAudioAnalog = true;
     private const int RemoteSpectrumBins = 384;
     private const int RemoteAfFeedCap = 200;
     private const int RemoteAudioSampleRate = AudioDemodulator.AudioSampleRate;
@@ -139,7 +140,38 @@ public partial class frmNeuroSDR
         catch { }
     }
 
-    private void PublishRemoteSpectrum(float[] spectrum)
+    private long _nextRemoteLiveTick;
+
+    private void PublishRemoteLive()
+    {
+        if (_remoteWebHost is null) return;
+        var now = Environment.TickCount64;
+        if (now < _nextRemoteLiveTick) return;
+        _nextRemoteLiveTick = now + 250;
+        try { _remoteBridge?.RaiseLive(); }
+        catch { }
+    }
+
+    internal RadioLiveUpdate CaptureRemoteLive() => new()
+    {
+        Running = _source.IsRunning,
+        FrequencyHz = Interlocked.Read(ref _tunedFrequency),
+        SignalDb = Volatile.Read(ref _signalLevelDb),
+        AudioLevelDb = Volatile.Read(ref _audioLevelDb),
+        Squelch1Open = _squelchCheck.Checked && _audioProcessors[0].SquelchOpen,
+        Squelch2Open = _squelchCheck2.Checked && _audioProcessors[1].SquelchOpen,
+        StereoLed = _stereoLed.IsOn,
+        Status = _statusLabel.Text ?? ""
+    };
+
+    private void PublishRemoteSpectrum(float[] spectrum) =>
+        PublishRemoteSpectrum(spectrum, alreadyWindowed: false, windowCenterHz: 0, windowSpanHz: 0);
+
+    /// <summary>
+    /// Kiwi/WebSDR/OpenWebRX rows are already the server waterfall window.
+    /// Cropping them with the audio sample rate collapses the view to a few kilohertz.
+    /// </summary>
+    private void PublishRemoteSpectrum(float[] spectrum, bool alreadyWindowed, long windowCenterHz, int windowSpanHz)
     {
         if (_remoteBridge is null || spectrum.Length == 0) return;
         var now = Environment.TickCount64;
@@ -148,11 +180,23 @@ public partial class frmNeuroSDR
         _nextRemoteSpectrumPublishTick = now + interval;
         FlushRemoteCwLines();
 
-        var rfCenter = Interlocked.Read(ref _rfCenterFrequency);
-        var sampleRate = Math.Max(1, _source.SampleRate);
-        var viewCenter = Interlocked.Read(ref _viewCenterFrequency);
-        var viewSpan = Math.Clamp(Volatile.Read(ref _viewBandwidth), 1, sampleRate);
-        var view = CropSpectrumToView(spectrum, rfCenter, sampleRate, viewCenter, viewSpan);
+        float[] view;
+        long viewCenter;
+        int viewSpan;
+        if (alreadyWindowed)
+        {
+            view = spectrum;
+            viewCenter = windowCenterHz;
+            viewSpan = Math.Max(1, windowSpanHz);
+        }
+        else
+        {
+            var rfCenter = Interlocked.Read(ref _rfCenterFrequency);
+            var sampleRate = Math.Max(1, _source.SampleRate);
+            viewCenter = Interlocked.Read(ref _viewCenterFrequency);
+            viewSpan = Math.Clamp(Volatile.Read(ref _viewBandwidth), 1, sampleRate);
+            view = CropSpectrumToView(spectrum, rfCenter, sampleRate, viewCenter, viewSpan);
+        }
         var levels = DownsampleSpectrum(view, RemoteSpectrumBins);
         _remoteBridge.RaiseSpectrum(new SpectrumRemoteFrame
         {
@@ -180,12 +224,19 @@ public partial class frmNeuroSDR
     }
 
     /// <summary>Push demodulated mono AF to web clients (independent of desktop WaveOut volume).</summary>
-    private void PublishRemoteAudio(float[] mono)
+    private void PublishRemoteAudio(float[] mono, bool decodedVoice = false)
     {
         if (_remoteBridge is null || mono.Length == 0) return;
 
         lock (_remoteAudioSync)
         {
+            if (decodedVoice && _remoteAudioAnalog)
+            {
+                _remoteAudioStagingCount = 0;
+                _remoteAudioAgc = 1f;
+            }
+            _remoteAudioAnalog = !decodedVoice;
+
             EnsureRemoteAudioCapacity(mono.Length);
             Array.Copy(mono, 0, _remoteAudioStaging, _remoteAudioStagingCount, mono.Length);
             _remoteAudioStagingCount += mono.Length;
@@ -199,10 +250,32 @@ public partial class frmNeuroSDR
                     Array.Copy(_remoteAudioStaging, RemoteAudioPacketSamples, _remoteAudioStaging, 0, remain);
                 _remoteAudioStagingCount = remain;
 
-                var pcm = FloatsToPcm16WithAgc(packet);
+                var pcm = decodedVoice ? FloatsToPcm16(packet, gain: 1f) : FloatsToPcm16WithAgc(packet);
                 _remoteBridge.RaiseAudio(pcm);
             }
         }
+    }
+
+    private void ClearRemoteAudioStaging()
+    {
+        lock (_remoteAudioSync)
+        {
+            if (!_remoteAudioAnalog && _remoteAudioStagingCount == 0) return;
+            _remoteAudioStagingCount = 0;
+            _remoteAudioAnalog = false;
+        }
+    }
+
+    private static byte[] FloatsToPcm16(float[] mono, float gain)
+    {
+        var pcm = new byte[mono.Length * 2];
+        for (var i = 0; i < mono.Length; i++)
+        {
+            var sample = (short)Math.Clamp((int)(mono[i] * gain * 32767f), short.MinValue, short.MaxValue);
+            pcm[i * 2] = (byte)sample;
+            pcm[i * 2 + 1] = (byte)(sample >> 8);
+        }
+        return pcm;
     }
 
     private void EnsureRemoteAudioCapacity(int incoming)
@@ -773,14 +846,30 @@ public partial class frmNeuroSDR
 
     internal void RemoteCenterViewOnTune()
     {
-        RecenterOnVfo();
+        if (_source is IRemoteAudioSampleSource)
+            CenterSpectrumOnFrequency(Interlocked.Read(ref _tunedFrequency));
+        else
+            RecenterOnVfo();
         PublishRemoteState();
     }
 
     internal void RemoteSetViewBandwidth(int hz)
     {
-        var max = Math.Max(5_000, _source.SampleRate);
-        _viewBandwidth = Math.Clamp(hz, 5_000, max);
+        if (_source is IRemoteAudioSampleSource remote)
+        {
+            var max = Math.Max(MinimumViewBandwidth(), remote.MaximumSpectrumSpan);
+            _viewBandwidth = Math.Clamp(hz, MinimumViewBandwidth(), max);
+            _viewCenterFrequency = ClampViewCenter(Interlocked.Read(ref _tunedFrequency), _viewBandwidth);
+            ConfigureDisplay();
+            UpdateZoomControls();
+            if (remote.IsRunning)
+                QueueRemoteViewport(immediate: false);
+            PublishRemoteState();
+            return;
+        }
+
+        var localMax = Math.Max(5_000, _source.SampleRate);
+        _viewBandwidth = Math.Clamp(hz, 5_000, localMax);
         _viewCenterFrequency = ClampViewCenter(Interlocked.Read(ref _tunedFrequency), _viewBandwidth);
         ConfigureDisplay();
         UpdateZoomControls();
@@ -943,6 +1032,7 @@ internal sealed class NeuroSDRRemoteRadioBridge : INeuroSDRRemoteRadio
     private readonly frmNeuroSDR _form;
 
     public event Action<RadioRemoteSnapshot>? StateChanged;
+    public event Action<RadioLiveUpdate>? LiveChanged;
     public event Action<SpectrumRemoteFrame>? SpectrumAvailable;
     public event Action<SpectrumRemoteFrame>? AfSpectrumAvailable;
     public event Action<byte[]>? AudioAvailable;
@@ -991,6 +1081,12 @@ internal sealed class NeuroSDRRemoteRadioBridge : INeuroSDRRemoteRadio
     {
         if (_form.IsDisposed) return;
         StateChanged?.Invoke(_form.CaptureRemoteSnapshot());
+    }
+
+    public void RaiseLive()
+    {
+        if (_form.IsDisposed) return;
+        LiveChanged?.Invoke(_form.CaptureRemoteLive());
     }
 
     public void RaiseSpectrum(SpectrumRemoteFrame frame) => SpectrumAvailable?.Invoke(frame);

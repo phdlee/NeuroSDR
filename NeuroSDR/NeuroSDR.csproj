@@ -17,10 +17,10 @@
     <InvariantGlobalization>false</InvariantGlobalization>
     <AssemblyName>NeuroSDR</AssemblyName>
     <RootNamespace>NeuroSDR</RootNamespace>
-    <Version>0.1.0</Version>
-    <AssemblyVersion>0.1.0.0</AssemblyVersion>
-    <FileVersion>0.1.0.0</FileVersion>
-    <InformationalVersion>0.1</InformationalVersion>
+    <Version>0.2.0</Version>
+    <AssemblyVersion>0.2.0.0</AssemblyVersion>
+    <FileVersion>0.2.0.0</FileVersion>
+    <InformationalVersion>0.2</InformationalVersion>
     <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
     <ApplicationIcon>Assets\neurosdr.ico</ApplicationIcon>
     <Product>NeuroSDR</Product>

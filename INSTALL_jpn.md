@@ -4,7 +4,7 @@
 
 ## 1. 入手
 
-1. GitHub **[Releases](https://github.com/phdlee/NeuroSDR/releases)** から **NeuroSDR-v0.1-win-x64.zip**（または最新 zip）をダウンロードします。
+1. GitHub **[Releases](https://github.com/phdlee/NeuroSDR/releases)** から **NeuroSDR-v0.2-win-x64.zip**（または最新 zip）をダウンロードします。
 2. 書き込み可能なフォルダに**すべて**展開します（例: `C:\NeuroSDR`）。
 
 スクリーンショット付きの詳しい手順は **[https://www.hamskey.com](https://www.hamskey.com)**（KD8CEC）をご覧ください。

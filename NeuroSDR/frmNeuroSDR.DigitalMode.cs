@@ -37,6 +37,9 @@ public partial class frmNeuroSDR
             {
                 if (SelectedAfVfoId().Equals("main", StringComparison.OrdinalIgnoreCase))
                     Interlocked.Exchange(ref _pendingDigitalVoiceSpectrum, block);
+                // Web hears the same decoded voice as the desktop speaker, not the FM discriminator.
+                if (DigitalVoicePlayback.OwnedOutputIndex >= 0)
+                    PublishRemoteAudio(block, decodedVoice: true);
             });
         _digitalMode.TextMessageAvailable += OnDigitalTextMessage;
         _digitalModePanel.Bind(_digitalMode);

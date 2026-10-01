@@ -1,6 +1,6 @@
 # NeuroSDR
 
-**Version 0.1** — Windows software-defined radio receiver by **KD8CEC**
+**Version 0.2** — Windows software-defined radio receiver by **KD8CEC**
 
 Most people do **not** need to compile anything. Download a release archive, extract it, and run `NeuroSDR.exe`.
 
@@ -22,7 +22,7 @@ Most people do **not** need to compile anything. Download a release archive, ext
 
 ## Quick start
 
-1. Open **[Releases](https://github.com/phdlee/NeuroSDR/releases)** and download **NeuroSDR-v0.1-win-x64.zip** (or the newest release zip).
+1. Open **[Releases](https://github.com/phdlee/NeuroSDR/releases)** and download **NeuroSDR-v0.2-win-x64.zip** (or the newest release zip).
 2. Follow **[INSTALL.md](INSTALL.md)** (driver notes for your radio, if any). For RTL-SDR, use the **latest Zadig**—older Zadig builds often fail to install WinUSB.
 3. Run `NeuroSDR.exe` → pick a **SOURCE** → **RX START**.
 

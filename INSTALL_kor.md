@@ -4,7 +4,7 @@
 
 ## 1. 받기
 
-1. GitHub **[Releases](https://github.com/phdlee/NeuroSDR/releases)** 에서 **NeuroSDR-v0.1-win-x64.zip**(또는 최신 zip)을 받습니다.
+1. GitHub **[Releases](https://github.com/phdlee/NeuroSDR/releases)** 에서 **NeuroSDR-v0.2-win-x64.zip**(또는 최신 zip)을 받습니다.
 2. 쓰기 가능한 폴더에 **전부** 압축을 풉니다 (예: `C:\NeuroSDR`).
 
 스크린샷이 많은 설치/사용 안내는 **[https://www.hamskey.com](https://www.hamskey.com)** (KD8CEC) 를 봐 주세요.

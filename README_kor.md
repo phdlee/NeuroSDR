@@ -1,6 +1,6 @@
 # NeuroSDR
 
-**버전 0.1** — Windows 소프트웨어 정의 라디오(SDR) 수신기 · **KD8CEC**
+**버전 0.2** — Windows 소프트웨어 정의 라디오(SDR) 수신기 · **KD8CEC**
 
 대부분은 **컴파일이 필요 없습니다.** 릴리스 zip을 받아 풀고 `NeuroSDR.exe`만 실행하면 됩니다.
 

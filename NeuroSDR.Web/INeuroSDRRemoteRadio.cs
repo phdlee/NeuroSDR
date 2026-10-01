@@ -31,10 +31,23 @@ public interface INeuroSDRRemoteRadio
     void SetDigitalFeed(int outputChannel, bool pcmAgc, int feedVolumePercent);
     void SetCw(bool lowerSide, int afWidthHz);
     event Action<RadioRemoteSnapshot>? StateChanged;
+    event Action<RadioLiveUpdate>? LiveChanged;
     event Action<SpectrumRemoteFrame>? SpectrumAvailable;
     event Action<SpectrumRemoteFrame>? AfSpectrumAvailable;
     event Action<byte[]>? AudioAvailable;
     event Action<AfPluginRemoteEvent>? AfPluginEvent;
+}
+
+public sealed class RadioLiveUpdate
+{
+    public bool Running { get; init; }
+    public long FrequencyHz { get; init; }
+    public float SignalDb { get; init; }
+    public float AudioLevelDb { get; init; }
+    public bool Squelch1Open { get; init; }
+    public bool Squelch2Open { get; init; }
+    public bool StereoLed { get; init; }
+    public string Status { get; init; } = "";
 }
 
 public sealed class RadioRemoteSnapshot

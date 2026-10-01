@@ -4,7 +4,7 @@
 
 ## 1. 获取
 
-1. 在 GitHub **[Releases](https://github.com/phdlee/NeuroSDR/releases)** 下载 **NeuroSDR-v0.1-win-x64.zip**（或最新 zip）。
+1. 在 GitHub **[Releases](https://github.com/phdlee/NeuroSDR/releases)** 下载 **NeuroSDR-v0.2-win-x64.zip**（或最新 zip）。
 2. 解压到可写目录（例如 `C:\NeuroSDR`），请完整解压。
 
 带截图的详细安装/使用说明请见 **[https://www.hamskey.com](https://www.hamskey.com)**（KD8CEC）。

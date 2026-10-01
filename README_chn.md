@@ -1,6 +1,6 @@
 # NeuroSDR
 
-**版本 0.1** — Windows 软件无线电（SDR）接收机 · **KD8CEC**
+**版本 0.2** — Windows 软件无线电（SDR）接收机 · **KD8CEC**
 
 大多数人**不需要编译**。下载发布版 zip，解压后运行 `NeuroSDR.exe` 即可。
 

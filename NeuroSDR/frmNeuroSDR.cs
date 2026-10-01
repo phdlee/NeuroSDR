@@ -966,6 +966,7 @@ public partial class frmNeuroSDR : Form
             _uiTimer.Start();
             AppIcons.ApplyRxButton(_startButton, running: true);
             _statusLabel.Text = remote.ConnectionStatus;
+            PublishRemoteState();
 
             await ApplyRemoteSpectrumViewOnConnectAsync(remote).ConfigureAwait(true);
             TrySyncSatelliteObserverFromCurrentRemote();
@@ -977,6 +978,7 @@ public partial class frmNeuroSDR : Form
             DisposeAudioOutputs();
             AppIcons.ApplyRxButton(_startButton, running: false);
             _statusLabel.Text = $"Web SDR connection failed · {exception.GetBaseException().Message}";
+            PublishRemoteState();
         }
         finally
         {
@@ -2613,6 +2615,7 @@ public partial class frmNeuroSDR : Form
             UpdateSubVfoMeters();
             _rfMeter.Value = Volatile.Read(ref _signalLevelDb);
             _afMeter.Value = Volatile.Read(ref _audioLevelDb);
+            PublishRemoteLive();
             UpdateWfmAudioChrome();
             if (_demodulator.Mode == RadioMode.NFM && Environment.TickCount64 >= _nextCtcssUiTick)
             {
@@ -3276,8 +3279,11 @@ public partial class frmNeuroSDR : Form
             trace?.RecordStage(UiPipelineStage.AfDisplaySubmit, stageStart);
         }
         // Web remote AF is pre-waveOut volume so phone/browser gain stays independent of desktop OUT1/OUT2.
-        if (_remoteBridge is not null)
+        // Digital voice owns the speaker: do not stream discriminator noise. The pacer sends decoded PCM.
+        if (_remoteBridge is not null && DigitalVoicePlayback.OwnedOutputIndex < 0)
             PublishRemoteAudio(stereo.Length >= 2 ? StereoToMono(stereo) : demodulated);
+        else if (_remoteBridge is not null)
+            ClearRemoteAudioStaging();
 
         if (_audioEnabled)
         {
@@ -3450,10 +3456,12 @@ public partial class frmNeuroSDR : Form
                     _tunedFrequency = remote.CenterFrequency;
                     UpdateFrequencyReadout();
                     AppIcons.ApplyRxButton(_startButton, running: true);
+                    PublishRemoteState();
                 }
                 else if (status.StartsWith("Connection failed", StringComparison.OrdinalIgnoreCase))
                 {
                     AppIcons.ApplyRxButton(_startButton, running: false);
+                    PublishRemoteState();
                 }
             });
         }
@@ -3630,6 +3638,7 @@ public partial class frmNeuroSDR : Form
         _mainWaterfallLive = false;
         AppIcons.ApplyRxButton(_startButton, running: false);
         _statusLabel.Text = $"Stopped · {_source.Name}";
+        PublishRemoteState();
     }
 
     private async void ToggleReceiver()
@@ -3683,6 +3692,7 @@ public partial class frmNeuroSDR : Form
             SnapshotPipelineTrace("START");
             _uiTimer.Start();
             AppIcons.ApplyRxButton(_startButton, running: true);
+            PublishRemoteState();
             if (IsSatelliteSceneActive)
                 _ = ApplySatelliteTrackingAsync();
         }
@@ -4612,6 +4622,7 @@ public partial class frmNeuroSDR : Form
             Interlocked.Increment(ref _rfSpectrumFrame);
             ConfigureDisplay();
             _display.PushSpectrum(remoteSpectrumDb);
+            PublishRemoteSpectrum(remoteSpectrumDb, alreadyWindowed: true, remote.CenterFrequency, remote.SpanHz);
             Interlocked.Increment(ref _renderedSpectrumFrames);
             NoteMainWaterfallFrame();
             return;

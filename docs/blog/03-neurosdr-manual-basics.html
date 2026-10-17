@@ -1,98 +1,99 @@
-<!-- NeuroSDR blog HTML for Blogger · paste into HTML view · Post 3 — Basic manual -->
+<!-- NeuroSDR · hamskey.com / Blogger HTML · 03 basic manual · KD8CEC -->
 
 <style>
-.neurosdr-post{font-family:Georgia,'Times New Roman',serif;color:#222;line-height:1.6;font-size:16px}
-.neurosdr-post h2{font-family:'Segoe UI',Arial,sans-serif;color:#0b3d4a;border-bottom:2px solid #2a7a8a;padding-bottom:.2em;margin-top:1.6em}
-.neurosdr-post h3{font-family:'Segoe UI',Arial,sans-serif;color:#145566;margin-top:1.35em}
+.neurosdr-post{font-family:Georgia,'Times New Roman',serif;color:#222;line-height:1.65;font-size:16px}
+.neurosdr-post h2{font-family:'Segoe UI',Arial,sans-serif;color:#0b3d4a;border-bottom:2px solid #2a7a8a;padding-bottom:.2em;margin-top:1.5em}
+.neurosdr-post h3{font-family:'Segoe UI',Arial,sans-serif;color:#145566;margin-top:1.3em}
+.neurosdr-post h4{font-family:'Segoe UI',Arial,sans-serif;color:#1a4a56;margin-top:1.1em}
 .neurosdr-post img{max-width:100%;height:auto;border:1px solid #b9c9d0}
 .neurosdr-post .shot{margin:1em 0}
 .neurosdr-post .caption{font-size:.9em;color:#555;font-style:italic;margin:.35em 0 0}
 .neurosdr-post .yt{background:#f3f8fa;border-left:4px solid #2a7a8a;padding:.75em 1em;margin:1em 0}
 .neurosdr-post .note{background:#fff8e6;border:1px solid #e0cfa0;padding:.75em 1em;margin:1em 0}
+.neurosdr-post .warn{background:#fdeeee;border:1px solid #e0a0a0;padding:.75em 1em;margin:1em 0}
 .neurosdr-post table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.95em}
 .neurosdr-post th,.neurosdr-post td{border:1px solid #bbb;padding:.45em .6em;text-align:left;vertical-align:top}
 .neurosdr-post th{background:#e8f2f5}
 .neurosdr-post a{color:#0b5f70}
-.neurosdr-post ul{margin:.4em 0 .8em 1.3em}
+.neurosdr-post ul,.neurosdr-post ol{margin:.4em 0 .9em 1.35em}
 .neurosdr-post code{background:#eef3f5;padding:.05em .35em;font-family:Consolas,monospace;font-size:.92em}
+.neurosdr-post .series{background:#eef6f8;padding:.8em 1em;margin:1.2em 0}
 </style>
 
 <div class="neurosdr-post">
 
-<h2>NeuroSDR user manual (1) — Main window, SOURCE, tuning, SCENE</h2>
-<p>This is the everyday operating guide. Author: <strong>KD8CEC</strong>. Pair it with the videos when a gesture is faster to see than to read.</p>
-<div class="shot"><img src="https://raw.githubusercontent.com/phdlee/NeuroSDR/main/docs/blog/images/main-window.png" alt="Main window overview (NeuroSDR 0.2)."/><div class="caption">Main window overview (NeuroSDR 0.2).</div></div>
-<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/MbWu9OuAIAQ?t=11" target="_blank" rel="noopener">Device selection &amp; display settings</a> (00:11)</div>
-<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/MbWu9OuAIAQ?t=40" target="_blank" rel="noopener">Frequency tuning shortcuts</a> (00:40)</div>
+<h2>NeuroSDR user manual (1) — Main window and everyday RX</h2>
+<p>Everyday operation with a local SDR (or a remote source if that is all you have). Author: <strong>KD8CEC</strong>.</p>
+<div class="shot"><img src="https://raw.githubusercontent.com/phdlee/NeuroSDR/main/docs/blog/images/main-window.png" alt="Main window — RX CONTROL, AF plugin tabs, RF spectrum/waterfall."/><div class="caption">Main window — RX CONTROL, AF plugin tabs, RF spectrum/waterfall.</div></div>
+<div class="yt"><strong>YouTube:</strong> <a href="https://youtu.be/MbWu9OuAIAQ?t=11" target="_blank" rel="noopener">Device selection &amp; display</a> — 00:11</div>
+<div class="yt"><strong>YouTube:</strong> <a href="https://youtu.be/MbWu9OuAIAQ?t=40" target="_blank" rel="noopener">Tuning shortcuts</a> — 00:40</div>
 
-<h3>1. RX CONTROL (left column)</h3>
-<ul>
-<li><strong>Frequency digits</strong> — Click a digit, then use the mouse wheel to nudge that decade. You can also type a frequency into the digital entry and commit with Enter (same spirit as the desktop VFO).</li>
-<li><strong>SOURCE</strong> — Local dongle, rtl_tcp, KiwiSDR, WebSDR, OpenWebRX, IQ playback, etc.</li>
-<li><strong>SET</strong> — Opens <em>NeuroSDR SETUP</em> (Plugin / Audio / AF Plugins / IQ Plugins / General / RF Performance).</li>
-<li><strong>RX START / RX STOP</strong> — Starts or stops the receiver pipeline.</li>
-<li><strong>RF GAIN</strong> — Hardware / source gain where applicable.</li>
-<li><strong>RF / AF meters</strong> — Signal and audio level while receiving.</li>
-<li><strong>SCENE</strong> — Named layout: SAVE / NEW / DEL. Scenes remember a surprising amount of state (plugins, Sub VFOs, remote site, pop-outs).</li>
-<li><strong>Mode chips</strong> — AM, SAM, DMR, DSTAR, C4FM, FDV, NFM, WFM, USB, LSB, CW, …</li>
-<li><strong>Band chips</strong> — Quick jumps (MW, SW, ham bands, FM, AIR, …).</li>
-<li><strong>BW presets</strong> — Filter bandwidth shortcuts around the current mode.</li>
-<li><strong>OUT 1 / OUT 2</strong> — Volume and squelch. Dual output is intentional for piping a second stream to other software.</li>
-</ul>
-<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/MbWu9OuAIAQ?t=97" target="_blank" rel="noopener">Channel presets &amp; signal hunting</a> (01:37)</div>
-<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/MbWu9OuAIAQ?t=177" target="_blank" rel="noopener">AFC on shortwave AM</a> (02:57)</div>
-
-<h3>2. Spectrum / waterfall gestures</h3>
-<ul>
-<li><strong>Click</strong> — Tune the VFO to that frequency.</li>
-<li><strong>Drag on the signal area</strong> — Retune while dragging.</li>
-<li><strong>Wheel</strong> — Zoom the view span.</li>
-<li><strong>Ctrl / Shift + wheel</strong> — Nudge the VFO (see on-screen hint).</li>
-<li><strong>Drag background / right-drag</strong> — Move or pan the view (especially important on Kiwi/WebSDR where the server waterfall window is independent of the audio VFO).</li>
-</ul>
-<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/GMVxHlswElA?t=40" target="_blank" rel="noopener">Spectrum / waterfall levels on Kiwi</a> (00:40)</div>
-
-<h3>3. Remote sites (Kiwi / WebSDR / OpenWebRX)</h3>
+<h3>1. Choose SOURCE, then RX START</h3>
 <ol>
-<li>Set SOURCE to KiwiSDR, WebSDR, or OpenWebRX.</li>
-<li>Press <strong>Find</strong> to search the directory, or paste a URL into the site box.</li>
-<li>Use <strong>Add</strong> (star) to keep favorites.</li>
-<li>Press <strong>RX START</strong>.</li>
+<li>In <strong>SOURCE</strong>, pick your hardware (SDRplay, RTL-SDR, HackRF, Airspy, …). Virtual Kiwi/WebSDR/OpenWebRX only if you are using the secondary Internet path.</li>
+<li>Press <strong>RX START</strong>. The button becomes <strong>RX STOP</strong> while running.</li>
+<li>Watch RF/AF meters and the status line for drops / underruns on hardware.</li>
 </ol>
-<div class="shot"><img src="https://raw.githubusercontent.com/phdlee/NeuroSDR/main/docs/blog/images/find-sdr-sites.png" alt="Find SDR site — filter by protocol, HF/VHF/UHF, search text."/><div class="caption">Find SDR site — filter by protocol, HF/VHF/UHF, search text.</div></div>
-<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/GMVxHlswElA?t=14" target="_blank" rel="noopener">Connecting to public KiwiSDR</a> (00:14)</div>
-<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/GMVxHlswElA?t=380" target="_blank" rel="noopener">Saving favorite sites</a> (06:20)</div>
-<div class="note">Classic WebSDR sites may not support every desktop feature (for example some AFC behaviors). Kiwi usually feels closest to a local radio for viewport control.</div>
 
-<h3>4. SET — the pages you will actually use</h3>
-<div class="shot"><img src="https://raw.githubusercontent.com/phdlee/NeuroSDR/main/docs/blog/images/setup-plugin.png" alt="SET → Plugin — spectrum / waterfall plugin selection."/><div class="caption">SET → Plugin — spectrum / waterfall plugin selection.</div></div>
+<h3>2. RX CONTROL</h3>
 <ul>
-<li><strong>Plugin</strong> — RF spectrum &amp; waterfall renderers.</li>
-<li><strong>Audio</strong> — Enable OUT1/OUT2 and pick waveOut devices.</li>
-<li><strong>AF Plugins</strong> — Add rows: FT8, CW, NeuroCaption, SSTV, WEFAX, … each with a VFO target.</li>
-<li><strong>IQ Plugins</strong> — Pre-demod IQ consumers (for example ADS-B style paths when enabled).</li>
-<li><strong>General</strong> — CW default side, tuner offset, <strong>WEB REMOTE</strong>, rtl_tcp endpoint, voice guidance.</li>
-<li><strong>RF / Performance</strong> — Sample-rate / hardware options (SDRplay AGC, HackRF amp, display rate, diagnostics).</li>
+<li><strong>Frequency digits</strong> — Click a digit, wheel to change that decade; or enter a frequency and commit.</li>
+<li><strong>RF GAIN</strong> — Hardware gain where the source supports it.</li>
+<li><strong>SET</strong> — NeuroSDR SETUP (Plugin / Audio / AF Plugins / IQ Plugins / General / RF / Performance).</li>
+<li><strong>SCENE</strong> — SAVE / NEW / DEL named layouts (plugins + Sub VFOs + view travel with the scene).</li>
+<li><strong>Mode / Band / BW chips</strong> — Quick mode, band jump, filter bandwidth.</li>
+<li><strong>OUT 1 / OUT 2 + SQL</strong> — Dual audio paths and squelch. Use OUT2 with VB-CABLE when feeding other software.</li>
+<li><strong>Add / Find</strong> — Channel memory helpers; Find opens the remote site directory when using virtual sources.</li>
+</ul>
+<div class="yt"><strong>YouTube:</strong> <a href="https://youtu.be/MbWu9OuAIAQ?t=97" target="_blank" rel="noopener">Presets &amp; hunting</a> — 01:37</div>
+<div class="yt"><strong>YouTube:</strong> <a href="https://youtu.be/MbWu9OuAIAQ?t=177" target="_blank" rel="noopener">AFC on AM</a> — 02:57</div>
+
+<h3>3. Spectrum and waterfall (hardware)</h3>
+<ul>
+<li><strong>Click / drag</strong> — Tune the audio VFO.</li>
+<li><strong>Wheel</strong> — Zoom view span inside the capture.</li>
+<li><strong>Ctrl / Shift + wheel</strong> — VFO nudge (see on-screen hint).</li>
+<li><strong>Drag background</strong> — Move RF view / center as the UI allows for that source.</li>
+</ul>
+<p>On wide hardware (e.g. RSP at several MS/s), the waterfall span can be much larger than a single SSB filter — that is what makes Sub VFOs useful (advanced post).</p>
+<div class="yt"><strong>YouTube:</strong> <a href="https://youtu.be/ZJElINzYDg0?t=0" target="_blank" rel="noopener">Hardware bandwidth context</a> — 00:00</div>
+
+<h3>4. SET pages you will use weekly</h3>
+<div class="shot"><img src="https://raw.githubusercontent.com/phdlee/NeuroSDR/main/docs/blog/images/setup-plugin.png" alt="SET → Plugin"/><div class="caption">SET → Plugin</div></div>
+<ul>
+<li><strong>Plugin</strong> — Spectrum / waterfall look.</li>
+<li><strong>Audio</strong> — Enable OUT1/OUT2, pick waveOut devices.</li>
+<li><strong>AF Plugins</strong> — Add FT8, NeuroCaption, CW, SSTV, … and assign each to a VFO.</li>
+<li><strong>IQ Plugins</strong> — Pre-demod IQ consumers when enabled.</li>
+<li><strong>General</strong> — CW default side, tuner offset, rtl_tcp endpoint, web remote, voice guidance.</li>
+<li><strong>RF / Performance</strong> — Sample rate, HackRF amp, SDRplay AGC, display FPS, diagnostics. This tab matters on real hardware.</li>
 </ul>
 
-<h3>5. Recording buttons (sidebar)</h3>
+<h3>5. Sidebar recording / memory</h3>
 <ul>
-<li><strong>Open IQ WAV</strong> / <strong>Start IQ Recording</strong> — Capture or play IQ.</li>
-<li><strong>Record</strong> — AF recording.</li>
-<li><strong>Smart Record</strong> — Time-of-day schedules (next advanced post).</li>
-<li><strong>Memory / Scan</strong> — Memory bank and scanning tools.</li>
+<li><strong>Open IQ WAV / Start IQ Recording</strong> — IQ playback and capture.</li>
+<li><strong>Record</strong> — AF recording now.</li>
+<li><strong>Smart Record</strong> — Scheduled AF jobs.</li>
+<li><strong>Memory / Scan</strong> — Memory banks and scanning.</li>
 </ul>
-<div class="shot"><img src="https://raw.githubusercontent.com/phdlee/NeuroSDR/main/docs/blog/images/smart-record.png" alt="Smart Record — schedule audio jobs by local time and day."/><div class="caption">Smart Record — schedule audio jobs by local time and day.</div></div>
+<div class="shot"><img src="https://raw.githubusercontent.com/phdlee/NeuroSDR/main/docs/blog/images/smart-record.png" alt="Smart Record schedule editor."/><div class="caption">Smart Record schedule editor.</div></div>
+<div class="yt"><strong>YouTube:</strong> <a href="https://youtu.be/Jl-EjuXUWZc?t=332" target="_blank" rel="noopener">Record &amp; Smart REC</a> — 05:32</div>
 
-<h3>6. Suggested first hour</h3>
+<h3>6. AF strip (VOICE / RNNoise, AF FILTER)</h3>
+<p>When RX is running, use AGC / NR / notch / AF filter checkboxes as offered, and the RNNoise panel (Apply RNNoise, blanker, blend dry↔processed). These run on demodulated audio from your hardware path.</p>
+<div class="yt"><strong>YouTube:</strong> <a href="https://youtu.be/yTsNrCdcZmo?t=538" target="_blank" rel="noopener">RNNoise tuning</a> — 08:58</div>
+<div class="yt"><strong>YouTube:</strong> <a href="https://youtu.be/wNwGGMLkiqg?t=420" target="_blank" rel="noopener">RNNoise on hardware SDR (verified)</a> — 07:00</div>
+
+<h3>7. Suggested first session on a dongle / RSP</h3>
 <ol>
-<li>Remote path: SOURCE = KiwiSDR → Find a quiet HF site → RX START → USB/LSB on a broadcast or ham band.</li>
-<li>Local path: Zadig + RTL-SDR or SDRplay API → SOURCE = your dongle → RX START.</li>
-<li>Open SET → Audio and confirm OUT1.</li>
-<li>Add FT8 or NeuroCaption from SET → AF Plugins when you are ready for the next posts.</li>
+<li>Install API / Zadig (previous post).</li>
+<li>SOURCE = your hardware → RX START.</li>
+<li>SET → Audio → confirm OUT1.</li>
+<li>Mode USB/LSB or NFM as appropriate; BW preset; click waterfall to tune.</li>
+<li>When ready, SET → AF Plugins → add FT8 or NeuroCaption.</li>
 </ol>
-<p>Next: NeuroCaption engines and the AF plugin host in detail.</p>
+<p>Next: captions and AF plugins in depth.</p>
 
 <hr/>
-<p><em>NeuroSDR by KD8CEC · <a href="https://www.hamskey.com">https://www.hamskey.com</a> · Source &amp; releases: <a href="https://github.com/phdlee/NeuroSDR">github.com/phdlee/NeuroSDR</a></em></p>
+<p><em>NeuroSDR — KD8CEC · Blog: <a href="https://www.hamskey.com">https://www.hamskey.com</a> · Downloads: <a href="https://github.com/phdlee/NeuroSDR/releases">GitHub Releases</a> · Source: <a href="https://github.com/phdlee/NeuroSDR">github.com/phdlee/NeuroSDR</a></em></p>
 </div>

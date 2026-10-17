@@ -1,0 +1,88 @@
+<!-- NeuroSDR blog HTML for Blogger · paste into HTML view · Post 4 — Captions & AF plugins -->
+
+<style>
+.neurosdr-post{font-family:Georgia,'Times New Roman',serif;color:#222;line-height:1.6;font-size:16px}
+.neurosdr-post h2{font-family:'Segoe UI',Arial,sans-serif;color:#0b3d4a;border-bottom:2px solid #2a7a8a;padding-bottom:.2em;margin-top:1.6em}
+.neurosdr-post h3{font-family:'Segoe UI',Arial,sans-serif;color:#145566;margin-top:1.35em}
+.neurosdr-post img{max-width:100%;height:auto;border:1px solid #b9c9d0}
+.neurosdr-post .shot{margin:1em 0}
+.neurosdr-post .caption{font-size:.9em;color:#555;font-style:italic;margin:.35em 0 0}
+.neurosdr-post .yt{background:#f3f8fa;border-left:4px solid #2a7a8a;padding:.75em 1em;margin:1em 0}
+.neurosdr-post .note{background:#fff8e6;border:1px solid #e0cfa0;padding:.75em 1em;margin:1em 0}
+.neurosdr-post table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.95em}
+.neurosdr-post th,.neurosdr-post td{border:1px solid #bbb;padding:.45em .6em;text-align:left;vertical-align:top}
+.neurosdr-post th{background:#e8f2f5}
+.neurosdr-post a{color:#0b5f70}
+.neurosdr-post ul{margin:.4em 0 .8em 1.3em}
+.neurosdr-post code{background:#eef3f5;padding:.05em .35em;font-family:Consolas,monospace;font-size:.92em}
+</style>
+
+<div class="neurosdr-post">
+
+<h2>NeuroSDR user manual (2) — NeuroCaption AI &amp; AF plugins</h2>
+<p>This post covers the features that make NeuroSDR feel different on shortwave and utility listening. Author: <strong>KD8CEC</strong>.</p>
+
+<h3>1. AF plugin host (mental model)</h3>
+<p>AF plugins receive demodulated audio from a chosen VFO (<code>main</code> or a Sub VFO). Each SCENE can own multiple plugin <em>instances</em> — for example three FT8 decoders on three dial frequencies — without juggling separate programs.</p>
+<ol>
+<li>Open <strong>SET → AF Plugins</strong>.</li>
+<li>Add a row, choose the plugin type, set the VFO target, APPLY.</li>
+<li>Use the AF tab strip on the right of the main window for that decoder’s UI.</li>
+</ol>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/MbWu9OuAIAQ?t=216" target="_blank" rel="noopener">AF plugins &amp; caption system intro</a> (03:36)</div>
+
+<h3>2. NeuroCaption — engines</h3>
+<p>Inside the Caption plugin chrome, open <strong>SETUP</strong> and pick an engine:</p>
+<table>
+<tr><th>Engine</th><th>When to use</th><th>Notes</th></tr>
+<tr><td>Local ONNX / Sherpa Whisper</td><td>Offline / privacy</td><td>Download INT8 model files (Tiny / Base / Small). CPU cost scales with model size.</td></tr>
+<tr><td>Groq API</td><td>Fast cloud STT</td><td>Needs an API key in Caption SETUP. Good for snappy captions.</td></tr>
+<tr><td>Self-hosted Whisper server</td><td>Your own GPU box</td><td>Point host/port at your Whisper service.</td></tr>
+</table>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/MbWu9OuAIAQ?t=247" target="_blank" rel="noopener">ONNX local engine</a> (04:07)</div>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/MbWu9OuAIAQ?t=320" target="_blank" rel="noopener">MyMemory translation test</a> (05:20)</div>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/MbWu9OuAIAQ?t=552" target="_blank" rel="noopener">Groq free-tier setup</a> (09:12)</div>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/MbWu9OuAIAQ?t=736" target="_blank" rel="noopener">Self-hosted Whisper GPU</a> (12:16)</div>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/Jl-EjuXUWZc?t=45" target="_blank" rel="noopener">ONNX Tiny/Base/Small selection</a> (00:45)</div>
+
+<p>Useful Caption options (names vary slightly by build): caption interval, display mode (original / translation / both), ticker on the AF waterfall, language hints.</p>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/GMVxHlswElA?t=183" target="_blank" rel="noopener">Subtitle display on AF waterfall</a> (03:03)</div>
+
+<h3>3. Shortwave helpers + AI language scan</h3>
+<p>EiBi / shortwave scheduler style plugins help you browse broadcast schedules, filter by language or country, and jump the VFO. AI scan can walk candidates and look for real speech / language — useful when you do not want to hand-spin every carrier.</p>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/Jl-EjuXUWZc?t=64" target="_blank" rel="noopener">Shortwave scheduler AF plugin</a> (01:04)</div>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/Jl-EjuXUWZc?t=134" target="_blank" rel="noopener">AI voice / language scan</a> (02:14)</div>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/Jl-EjuXUWZc?t=238" target="_blank" rel="noopener">Station map</a> (03:58)</div>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/yTsNrCdcZmo?t=0" target="_blank" rel="noopener">On-air detection &amp; blue markers</a> (00:00)</div>
+
+<h3>4. Built-in decoder plugins (starter list)</h3>
+<table>
+<tr><th>Plugin</th><th>Typical use</th></tr>
+<tr><td>FT8 / FT4</td><td>Amateur weak-signal digital; multiple instances + MAIN WF overlay</td></tr>
+<tr><td>CEC CW</td><td>Multi-channel CW across the AF passband</td></tr>
+<tr><td>SSTV / RTTY / Weather Fax</td><td>Classic HF image &amp; FSK utilities</td></tr>
+<tr><td>Kiwi CW / FSK / FAX / NAVTEX / WWV helpers</td><td>Convenience when SOURCE is Kiwi</td></tr>
+<tr><td>flcw / flrtty / flfax</td><td>Fldigi-inspired AF decoders</td></tr>
+<tr><td>Digital voice / DSD-FME bridge</td><td>DMR, D-STAR, C4FM (see advanced post)</td></tr>
+<tr><td>AF Record</td><td>Plugin-scoped recording</td></tr>
+</table>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/ZJElINzYDg0?t=64" target="_blank" rel="noopener">FT8/FT4 plugin configuration</a> (01:04)</div>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/ZJElINzYDg0?t=393" target="_blank" rel="noopener">MAIN WF callsign overlay</a> (06:33)</div>
+
+<h3>5. RNNoise and active CW filter</h3>
+<p>RNNoise is an AI voice extractor / noise suppressor on the AF path. Blend dry vs processed until speech is clear without sounding hollow. The active CW filter boosts Morse-shaped energy for listening or external decoders.</p>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/yTsNrCdcZmo?t=538" target="_blank" rel="noopener">RNNoise demo &amp; tuning</a> (08:58)</div>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/yTsNrCdcZmo?t=693" target="_blank" rel="noopener">Active CW filter on Kiwi</a> (11:33)</div>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/wNwGGMLkiqg?t=420" target="_blank" rel="noopener">RNNoise verified on hardware SDR</a> (07:00)</div>
+
+<h3>6. Dual audio to other programs</h3>
+<p>Enable OUT2 in SET → Audio, point it at <a href="https://vb-audio.com/Cable/">VB-CABLE</a> (or similar), and feed WSJT-X / FLDIGI / DeepCW while you keep speakers on OUT1.</p>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/yTsNrCdcZmo?t=192" target="_blank" rel="noopener">Dual audio + VB-CABLE</a> (03:12)</div>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/yTsNrCdcZmo?t=258" target="_blank" rel="noopener">WSJT-X external audio</a> (04:18)</div>
+
+<div class="note">Caption quality follows SNR and mode. AM shortwave with music beds will hallucinate more than clean SSB speech. Prefer Base/Small ONNX or Groq when Tiny is too optimistic.</div>
+<p>Next: Sub VFOs, multi-band FT8, satellite SCENE, digital voice, Smart Record, and web remote.</p>
+
+<hr/>
+<p><em>NeuroSDR by KD8CEC · <a href="https://www.hamskey.com">https://www.hamskey.com</a> · Source &amp; releases: <a href="https://github.com/phdlee/NeuroSDR">github.com/phdlee/NeuroSDR</a></em></p>
+</div>

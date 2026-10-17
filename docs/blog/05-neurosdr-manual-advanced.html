@@ -1,0 +1,75 @@
+<!-- NeuroSDR blog HTML for Blogger · paste into HTML view · Post 5 — Advanced -->
+
+<style>
+.neurosdr-post{font-family:Georgia,'Times New Roman',serif;color:#222;line-height:1.6;font-size:16px}
+.neurosdr-post h2{font-family:'Segoe UI',Arial,sans-serif;color:#0b3d4a;border-bottom:2px solid #2a7a8a;padding-bottom:.2em;margin-top:1.6em}
+.neurosdr-post h3{font-family:'Segoe UI',Arial,sans-serif;color:#145566;margin-top:1.35em}
+.neurosdr-post img{max-width:100%;height:auto;border:1px solid #b9c9d0}
+.neurosdr-post .shot{margin:1em 0}
+.neurosdr-post .caption{font-size:.9em;color:#555;font-style:italic;margin:.35em 0 0}
+.neurosdr-post .yt{background:#f3f8fa;border-left:4px solid #2a7a8a;padding:.75em 1em;margin:1em 0}
+.neurosdr-post .note{background:#fff8e6;border:1px solid #e0cfa0;padding:.75em 1em;margin:1em 0}
+.neurosdr-post table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.95em}
+.neurosdr-post th,.neurosdr-post td{border:1px solid #bbb;padding:.45em .6em;text-align:left;vertical-align:top}
+.neurosdr-post th{background:#e8f2f5}
+.neurosdr-post a{color:#0b5f70}
+.neurosdr-post ul{margin:.4em 0 .8em 1.3em}
+.neurosdr-post code{background:#eef3f5;padding:.05em .35em;font-family:Consolas,monospace;font-size:.92em}
+</style>
+
+<div class="neurosdr-post">
+
+<h2>NeuroSDR user manual (3) — Sub VFO, FT8 multitasking, satellite, digital voice, Smart Record, web remote</h2>
+<p>Advanced workflows. Author: <strong>KD8CEC</strong>.</p>
+
+<h3>1. Sub VFOs — listen here, decode there</h3>
+<p>A Sub VFO is an independent virtual receiver inside the instantaneous RF window of your source. On a wide SDRplay capture you can park MAIN on a shortwave broadcast while SUB1/SUB2/SUB3 decode FT8 on 14.074, 7.074, 7.040, …</p>
+<ol>
+<li>Add Sub VFOs from the UI (+ ADD / context menu on the spectrum).</li>
+<li>Set each Sub VFO frequency, mode, bandwidth, and output channel (or DEC-only).</li>
+<li>In SET → AF Plugins, point FT8 instances at those Sub VFO IDs.</li>
+<li>Watch for <strong>OUT OF RANGE</strong> when a Sub VFO leaves the current capture / viewport.</li>
+</ol>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/ZJElINzYDg0?t=162" target="_blank" rel="noopener">Creating Sub VFOs &amp; audio routing</a> (02:42)</div>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/ZJElINzYDg0?t=214" target="_blank" rel="noopener">Background FT8 while listening</a> (03:34)</div>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/ZJElINzYDg0?t=294" target="_blank" rel="noopener">Bandwidth limits &amp; OUT OF RANGE</a> (04:54)</div>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/ZJElINzYDg0?t=698" target="_blank" rel="noopener">Sub VFO on 7.040 JA FT8</a> (11:38)</div>
+
+<h3>2. SCENE system (including Satellite)</h3>
+<p>Scenes store the working set: source, plugins, Sub VFOs, waterfall view, and more. The Satellite scene adds observer location, pass priority, and Doppler-aware retuning — including experiments against VHF/UHF-capable WebSDR/Kiwi nodes.</p>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/wNwGGMLkiqg" target="_blank" rel="noopener">Satellite mode overview</a> (00:00)</div>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/wNwGGMLkiqg?t=27" target="_blank" rel="noopener">GPS / home location setup</a> (00:27)</div>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/wNwGGMLkiqg?t=63" target="_blank" rel="noopener">Doppler correction</a> (01:03)</div>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/wNwGGMLkiqg?t=161" target="_blank" rel="noopener">WebSDR satellite pass test</a> (02:41)</div>
+<div class="note">Do not hardcode someone else’s home GPS into shared settings files. Enter <em>your</em> observer position in the Satellite UI.</div>
+
+<h3>3. Digital voice (DMR / D-STAR / C4FM)</h3>
+<p>NeuroSDR embeds a DSD-FME based path so digital voice can decode inside the app. Use the digital mode panel for feed AGC / volume / output channel. On the optional web remote, only <em>decoded</em> voice should play — not raw discriminator noise.</p>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/zzJ6O29HZdw" target="_blank" rel="noopener">Digital voice via DSD-FME DLL &amp; AGC</a> (full video)</div>
+
+<h3>4. Smart Record</h3>
+<p>Smart Record schedules AF (or other kinds when offered) jobs by local time and weekday, with optional tune/mode/bandwidth overrides at start.</p>
+<div class="shot"><img src="https://raw.githubusercontent.com/phdlee/NeuroSDR/main/docs/blog/images/smart-record.png" alt="Smart Record job editor."/><div class="caption">Smart Record job editor.</div></div>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/Jl-EjuXUWZc?t=332" target="_blank" rel="noopener">AF Record &amp; Smart REC</a> (05:32)</div>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/Jl-EjuXUWZc?t=360" target="_blank" rel="noopener">Configuring schedules</a> (06:00)</div>
+
+<h3>5. Web remote (browser / phone)</h3>
+<p>In <strong>SET → General</strong>, enable <strong>ENABLE WEB REMOTE</strong>. Optionally bind all interfaces for LAN phones and set an access token. The status bar shows a URL such as <code>http://127.0.0.1:8765/</code>.</p>
+<p>The web UI mirrors RX start/stop, frequency, mode, bandwidth, scenes, sites, meters, spectrum/waterfall (including Kiwi rows), AF plugins feed, and decoded digital voice audio.</p>
+<div class="note"><strong>Video status:</strong> A dedicated web-remote YouTube episode is planned but not published yet. Until then, use this section + the in-app SETUP labels. I will link the video here when it goes up on the channel.</div>
+
+<h3>6. Config export / import</h3>
+<p>From the title-bar chrome menu → <strong>Config</strong>: Export / Import / Reset settings. Useful when moving a SCENE-heavy setup between PCs — still scrub personal GPS / API keys before sharing files publicly.</p>
+
+<h3>7. Where to go next</h3>
+<ul>
+<li>GitHub releases: <a href="https://github.com/phdlee/NeuroSDR/releases">https://github.com/phdlee/NeuroSDR/releases</a></li>
+<li>Install text: <a href="https://github.com/phdlee/NeuroSDR/blob/main/INSTALL.md">INSTALL.md</a></li>
+<li>This blog: <a href="https://www.hamskey.com">https://www.hamskey.com</a></li>
+<li>YouTube playlist starting at <a href="https://youtu.be/MbWu9OuAIAQ">NeuroSDR #1</a></li>
+</ul>
+<p>Thanks for reading — and for hosting public Kiwi/WebSDR nodes that make the no-hardware path possible.<br/>— KD8CEC</p>
+
+<hr/>
+<p><em>NeuroSDR by KD8CEC · <a href="https://www.hamskey.com">https://www.hamskey.com</a> · Source &amp; releases: <a href="https://github.com/phdlee/NeuroSDR">github.com/phdlee/NeuroSDR</a></em></p>
+</div>

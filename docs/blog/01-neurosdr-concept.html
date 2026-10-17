@@ -1,0 +1,80 @@
+<!-- NeuroSDR blog HTML for Blogger · paste into HTML view · Post 1 — Concept -->
+
+<style>
+.neurosdr-post{font-family:Georgia,'Times New Roman',serif;color:#222;line-height:1.6;font-size:16px}
+.neurosdr-post h2{font-family:'Segoe UI',Arial,sans-serif;color:#0b3d4a;border-bottom:2px solid #2a7a8a;padding-bottom:.2em;margin-top:1.6em}
+.neurosdr-post h3{font-family:'Segoe UI',Arial,sans-serif;color:#145566;margin-top:1.35em}
+.neurosdr-post img{max-width:100%;height:auto;border:1px solid #b9c9d0}
+.neurosdr-post .shot{margin:1em 0}
+.neurosdr-post .caption{font-size:.9em;color:#555;font-style:italic;margin:.35em 0 0}
+.neurosdr-post .yt{background:#f3f8fa;border-left:4px solid #2a7a8a;padding:.75em 1em;margin:1em 0}
+.neurosdr-post .note{background:#fff8e6;border:1px solid #e0cfa0;padding:.75em 1em;margin:1em 0}
+.neurosdr-post table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.95em}
+.neurosdr-post th,.neurosdr-post td{border:1px solid #bbb;padding:.45em .6em;text-align:left;vertical-align:top}
+.neurosdr-post th{background:#e8f2f5}
+.neurosdr-post a{color:#0b5f70}
+.neurosdr-post ul{margin:.4em 0 .8em 1.3em}
+.neurosdr-post code{background:#eef3f5;padding:.05em .35em;font-family:Consolas,monospace;font-size:.92em}
+</style>
+
+<div class="neurosdr-post">
+
+<h2>NeuroSDR — An AI-built SDR receiver for real listening, not demos</h2>
+<p>Hello. This is <strong>KD8CEC</strong>.</p>
+<p>NeuroSDR is a Windows software-defined radio (SDR) receiver I have been developing and testing with AI agents (primarily <strong>Grok</strong>). The goal was not a toy UI that only looks like an SDR. The goal was a daily driver: tune local hardware or public Kiwi/WebSDR sites, decode the modes amateurs actually use, and add a few capabilities that conventional desktop SDR packages still treat as exotic.</p>
+<p>Public release packages and source are on GitHub: <a href="https://github.com/phdlee/NeuroSDR/releases">NeuroSDR Releases</a>.</p>
+
+<div class="shot"><img src="https://raw.githubusercontent.com/phdlee/NeuroSDR/main/docs/blog/images/main-window.png" alt="NeuroSDR 0.2 main window — RX control, KiwiSDR source, FT8 AF plugin, spectrum/waterfall."/><div class="caption">NeuroSDR 0.2 main window — RX control, KiwiSDR source, FT8 AF plugin, spectrum/waterfall.</div></div>
+
+<h3>1. What is different</h3>
+<p>Most SDR software is excellent at RF plumbing: FFT, demodulators, waterfall colors. NeuroSDR aims to keep that baseline <em>and</em> fold in AI-assisted listening plus a plugin host that stays useful while you are still watching the waterfall.</p>
+<ul>
+<li><strong>AI audio captions (NeuroCaption)</strong> — Speech-to-text on demodulated audio, with optional live translation. Engines include local ONNX/Sherpa Whisper, Groq cloud Whisper, and a self-hosted Whisper server path.</li>
+<li><strong>AF / IQ plugin architecture</strong> — FT8/FT4, CEC CW, SSTV, RTTY, weather fax, Kiwi-oriented helpers, ADS-B / experimental IQ paths, digital voice bridges, and more can run as scene-owned instances.</li>
+<li><strong>Sub VFOs</strong> — Independent virtual receivers inside the capture window so you can listen to shortwave on MAIN while FT8 decoders keep working on other dial frequencies.</li>
+<li><strong>SCENE system</strong> — Layout, plugins, Sub VFOs, and remote site choices travel together (including a Satellite scene with Doppler-aware tracking).</li>
+<li><strong>Dual audio outs + RNNoise / CW active filters</strong> — Route OUT2 to VB-CABLE for WSJT-X/FLDIGI while RNNoise cleans voice on OUT1.</li>
+<li><strong>Remote sources without hardware</strong> — KiwiSDR, classic WebSDR, and OpenWebRX as first-class SOURCE types.</li>
+<li><strong>Optional web remote</strong> — Browser / phone control with spectrum, meters, and decoded digital voice when enabled in SETUP.</li>
+</ul>
+
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/MbWu9OuAIAQ" target="_blank" rel="noopener">NeuroSDR #1 — Setup &amp; real-time AI captions</a> (start)</div>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/MbWu9OuAIAQ?t=216" target="_blank" rel="noopener">AF plugins &amp; NeuroCaption overview</a> (03:36)</div>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/MbWu9OuAIAQ?t=247" target="_blank" rel="noopener">Local ONNX caption engine</a> (04:07)</div>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/MbWu9OuAIAQ?t=552" target="_blank" rel="noopener">Groq API caption engine</a> (09:12)</div>
+
+<h3>2. AI captions are not a gimmick panel</h3>
+<p>NeuroCaption is an AF plugin. You attach it to MAIN (or a Sub VFO), open <strong>SETUP</strong> inside the caption chrome, pick an engine, and decide whether captions ride the AF waterfall ticker. Translation can target English or other languages via MyMemory when configured.</p>
+<p>That means you can park a KiwiSDR on a foreign shortwave broadcast, keep listening, and read (or translate) speech without a separate transcription workflow. Episode #2 shows captions on remote Kiwi audio end-to-end.</p>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/GMVxHlswElA" target="_blank" rel="noopener">NeuroSDR #2 — WebSDR / Kiwi + live translation</a> (start)</div>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/GMVxHlswElA?t=80" target="_blank" rel="noopener">NeuroCaption interval &amp; setup</a> (01:20)</div>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/GMVxHlswElA?t=311" target="_blank" rel="noopener">Multi-language translation demo</a> (05:11)</div>
+
+<h3>3. Classical SDR features are still there</h3>
+<p>NeuroSDR is not “AI only.” The everyday radio surface is intentional:</p>
+<ul>
+<li>Modes: AM, SAM, NFM, WFM, USB, LSB, CW, RAW, FreeDV, plus digital voice modes (DMR / D-STAR / C4FM) through the embedded DSD-FME path.</li>
+<li>Click / drag / wheel tuning, AFC on analog modes, bandwidth presets, dual OUT volumes and squelch.</li>
+<li>Memory / scan, IQ and AF recording, Smart Record schedules, EiBi shortwave schedule helpers, on-air markers.</li>
+<li>Hardware sources: SDRplay, RTL-SDR, HackRF, Airspy, optional Soapy devices, plus rtl_tcp.</li>
+</ul>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/yTsNrCdcZmo" target="_blank" rel="noopener">On-air markers, dual audio, RNNoise, CW filter</a> (start)</div>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/ZJElINzYDg0" target="_blank" rel="noopener">Sub VFOs + multi-band FT8 while listening</a> (start)</div>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/wNwGGMLkiqg" target="_blank" rel="noopener">Satellite SCENE + Doppler tracking</a> (start)</div>
+<div class="yt"><strong>Video:</strong> <a href="https://youtu.be/zzJ6O29HZdw" target="_blank" rel="noopener">Digital voice (DMR / D-STAR / C4FM)</a> (start)</div>
+
+<div class="note"><strong>Design note:</strong> NeuroSDR is actively evolved with AI coding agents. Features move quickly. Prefer the latest GitHub Release zip, and treat these blog posts as the screenshot companion to the videos.</div>
+
+<h3>4. Series map</h3>
+<ol>
+<li>This post — concept and what is new</li>
+<li>Download, supported hardware, RTL-SDR / Zadig install</li>
+<li>Basic operation manual (SOURCE → RX START → tune)</li>
+<li>AI captions &amp; AF plugins in depth</li>
+<li>Advanced: Sub VFO / FT8 / satellite / digital voice / Smart Record / web remote</li>
+</ol>
+<p>Next: how to download a release and get your dongle (or a remote Kiwi) on the air.</p>
+
+<hr/>
+<p><em>NeuroSDR by KD8CEC · <a href="https://www.hamskey.com">https://www.hamskey.com</a> · Source &amp; releases: <a href="https://github.com/phdlee/NeuroSDR">github.com/phdlee/NeuroSDR</a></em></p>
+</div>
